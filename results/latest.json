@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-13T20:41:23Z",
+ "checked_at": "2026-10-13T23:15:28Z",
  "base": "https://www.ukfinancetools.co.uk",
  "mode": "live",
  "expected_urls_from": "27abbea",
@@ -16,118 +16,125 @@
    "extra_urls_checked": 0
   },
   "calculators": {
-   "findings": [],
+   "findings": [
+    "calculator vat-calculator: result #results-container did not populate within 8000 ms after 3 submit(s); page error(s): Cannot read properties of undefined (reading 'value')"
+   ],
    "results": [
     {
      "calculator": "vat-calculator",
      "path": "/calculators/vat-calculator.php",
-     "ok": true,
-     "problems": [],
-     "ms": 2014
+     "ok": false,
+     "problems": [
+      "result #results-container did not populate within 8000 ms after 3 submit(s)",
+      "page error(s): Cannot read properties of undefined (reading 'value')"
+     ],
+     "ms": 47474
     },
     {
      "calculator": "dividend-tax-calculator",
      "path": "/calculators/dividend-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1089
+     "ms": 1667
     },
     {
      "calculator": "self-employed-tax-calculator",
      "path": "/calculators/self-employed-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1295
+     "ms": 2125
     },
     {
      "calculator": "shares-cgt-calculator",
      "path": "/calculators/shares-cgt-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1030
+     "ms": 2100
     },
     {
      "calculator": "property-cgt-calculator",
      "path": "/calculators/property-cgt-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1097
+     "ms": 2095
     },
     {
      "calculator": "iht-planner",
      "path": "/calculators/iht-planner.php",
      "ok": true,
      "problems": [],
-     "ms": 1386
+     "ms": 1586
     },
     {
      "calculator": "pension-lump-sum-tax-calculator",
      "path": "/calculators/pension-lump-sum-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1409
+     "ms": 1596
     },
     {
      "calculator": "salary-dividend-calculator",
      "path": "/calculators/salary-dividend-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1188
+     "ms": 3730
     },
     {
      "calculator": "side-income-tax-calculator",
      "path": "/calculators/side-income-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1406
+     "ms": 2096
     },
     {
      "calculator": "state-pension-topup-calculator",
      "path": "/calculators/state-pension-topup-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1454
+     "ms": 3694
     },
     {
      "calculator": "tapered-annual-allowance-calculator",
      "path": "/calculators/tapered-annual-allowance-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1096
+     "ms": 2092
     },
     {
      "calculator": "capital-gains-tax-scotland-calculator",
      "path": "/calculators/capital-gains-tax-scotland-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1146
+     "ms": 2092
     },
     {
      "calculator": "fire-calculator",
      "path": "/calculators/fire-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1090
+     "ms": 1594
     },
     {
      "calculator": "safe-withdrawal-rate-calculator",
      "path": "/calculators/safe-withdrawal-rate-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 7790
+     "ms": 10441
     },
     {
      "calculator": "real-cost-of-living",
      "path": "/calculators/real-cost-of-living.php",
      "ok": true,
      "problems": [],
-     "ms": 2087
+     "ms": 2072
     }
    ]
   }
  },
- "findings": [],
- "outcome": "pass",
+ "findings": [
+  "calculator vat-calculator: result #results-container did not populate within 8000 ms after 3 submit(s); page error(s): Cannot read properties of undefined (reading 'value')"
+ ],
+ "outcome": "fail",
  "urls_checked": 62,
- "duration_s": 69.8
+ "duration_s": 280.0
 }
