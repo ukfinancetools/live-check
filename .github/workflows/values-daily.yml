@@ -1,0 +1,40 @@
+# TEMPLATE for the PUBLIC live-check repo. Copy to .github/workflows/values-daily.yml THERE.
+#
+# Once a day: the live engine's generated parameter block and every registry figure a live page states, against
+# the live registry (/data/tax-params.json, which the live site serves; checked 2026-10-13). A mismatch means a
+# partial deploy, a stale cache or a typed figure. stated-values.json is a copy made by the site repo's
+# sync_live_check.py; a new ukft_param() call on a page arrives with the next sync.
+name: Value comparison (daily)
+
+on:
+  schedule:
+    - cron: '23 6 * * *'   # 06:23 UTC daily, after the weekday ONS refresh
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-check
+  cancel-in-progress: false
+
+jobs:
+  values:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Daily value comparison
+        id: values
+        run: python3 compare_values.py --base https://www.ukfinancetools.co.uk
+
+      - name: Keep the result
+        if: always()
+        run: |
+          git config user.name "ukft-live-check"
+          git config user.email "live-check@users.noreply.github.com"
+          git add results/values-latest.json
+          git commit -m "value comparison $(date -u +%Y-%m-%d): ${{ steps.values.outcome }}" || echo "nothing to commit"
+          git pull --rebase origin "${GITHUB_REF_NAME}" || true
+          git push origin "HEAD:${GITHUB_REF_NAME}"

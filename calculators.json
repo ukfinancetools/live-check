@@ -1,0 +1,119 @@
+{
+  "_doc": "One fixed input per calculator for the hourly live check (S117 WP-1, I297). Each expect string is a value from an OUTSIDE source named in 'source': an HMRC worked example or test routine, a statutory rule worked by hand from GOV.UK figures, or an independent model (a brute-force sweep, a closed form). Never the engine, the registry or the page (repo CLAUDE.md, figures rule). Field ids are the live page's element ids; the runner fills them, submits the form (requestSubmit) and reads the result container's text. A calculator with 'form': null is read after load with no submit. 'expect_pattern' is a regular expression the result text must match. 'result_timeout' is milliseconds.",
+  "defaults": {"form": "#tool-form", "result": "#results-container", "result_timeout": 8000},
+  "calculators": [
+    {
+      "calculator": "vat-calculator",
+      "path": "/calculators/vat-calculator.php",
+      "fill": {"op-add": true, "rate-20": true, "amount": "100"},
+      "expect": ["£120.00", "£100.00", "£20.00"],
+      "source": "VATA 1994 s2(1) standard rate 20% (GOV.UK, VAT rates): net 100.00, VAT 100 x 20% = 20.00, gross 120.00, by hand."
+    },
+    {
+      "calculator": "dividend-tax-calculator",
+      "path": "/calculators/dividend-tax-calculator.php",
+      "fill": {"tax-year": "2026/27", "res-uk": true, "sal-low": true, "profit": "50000", "other-income": "0"},
+      "expect": ["£38,399.15"],
+      "source": "First principles on GOV.UK 2026/27 rUK rates, no Employment Allowance: salary 5,000 = secondary threshold, so employer and employee NI 0; CT 19% x (50,000 - 5,000) = 8,550; dividends 36,450; PA 12,570 covers the salary and 7,570 of dividends; 28,880 taxable less 500 allowance = 28,380 x 10.75% = 3,050.85; take-home 5,000 + 36,450 - 3,050.85 = 38,399.15."
+    },
+    {
+      "calculator": "self-employed-tax-calculator",
+      "path": "/calculators/self-employed-tax-calculator.php",
+      "fill": {"tax-year": "2026/27", "res-uk": true, "salary": "30000", "revenue": "30000", "expenses": "0"},
+      "expect": ["£927", "refunded after the year", "£7,946.00"],
+      "source": "SSCR 2001 reg 100 annual maximum by hand (matches PolicyEngine): Class 1 main 17,430 x 8% = 1,394.40; steps 2 to 8 give a Class 4 maximum of 927.00 against 1,045.80 billed. Income tax on the profit stacked on the salary, GOV.UK 2026/27 rates by hand."
+    },
+    {
+      "calculator": "shares-cgt-calculator",
+      "path": "/calculators/shares-cgt-calculator.php",
+      "fill": {"income": "40000"},
+      "steps": [
+        {"fill": {"pool-qty": "1000", "pool-cost": "5000"}}, {"click": "#add-purchase-btn"},
+        {"fill": {"pool-qty": "1000", "pool-cost": "7000"}}, {"click": "#add-purchase-btn"},
+        {"fill": {"sale-qty": "1000", "sale-proceeds": "10000"}}
+      ],
+      "expect": ["Gross Capital Gain £4,000.00", "£180.00"],
+      "source": "TCGA 1992 s104 pooling by hand: (5,000 + 7,000) / 2,000 shares = 6.00 a share; 1,000 sold for 10,000 less 6,000 cost = gain 4,000; less the 3,000 annual exempt amount = 1,000 x 18% (basic rate, GOV.UK CGT rates 2026/27) = 180.00."
+    },
+    {
+      "calculator": "property-cgt-calculator",
+      "path": "/calculators/property-cgt-calculator.php",
+      "fill": {"main-home-yes": true, "sale-price": "100000", "purchase-price": "0", "income": "60000", "ownership-months": "192", "main-home-months": "183", "months-since-move-out": "0"},
+      "expect": ["£405.00"],
+      "source": "By hand: the relief fraction rule of HMRC Helpsheet HS283 (Private Residence Relief): 183 of 192 months are relieved (the final 9 months fall inside them), so 9/192 of the gain is chargeable; (100,000 x 9/192 - 3,000 annual exempt amount) x 24% (higher rate, GOV.UK CGT rates 2026/27, income 60,000) = (4,687.50 - 3,000) x 24% = 405.00."
+    },
+    {
+      "calculator": "iht-planner",
+      "path": "/calculators/iht-planner.php",
+      "fill": {"status-single": true, "home_value": "400000", "assets_value": "600000", "pension_value": "0", "descendants-no": true},
+      "expect": ["£270,000"],
+      "source": "IHTA 1984 s7 and Sch 1 (GOV.UK, Inheritance Tax): a 1,000,000 estate with no descendants gets the 325,000 nil-rate band only; (1,000,000 - 325,000) x 40% = 270,000, by hand."
+    },
+    {
+      "calculator": "pension-lump-sum-tax-calculator",
+      "path": "/calculators/pension-lump-sum-tax-calculator.php",
+      "fill": {"pot-1-method": "UFPLS", "pot-1-potValue": "20000"},
+      "expect": ["£5,128.19"],
+      "source": "HMRC PAYE emergency tax routine (PAYErout), code 1257L month 1, on the 15,000 taxable slice of a 20,000 UFPLS, worked by hand from PAYErout in test-scripts/engine-oracle/test_emergency_tax.js (the 'rUK 15,000 taxable/mo' and 'Month 1: 15,000 withholds' cases): 5,128.19."
+    },
+    {
+      "calculator": "salary-dividend-calculator",
+      "path": "/calculators/salary-dividend-calculator.php",
+      "fill": {"profit": "80000", "other-income": "0", "ea-no": "no", "res-england": "england", "mode-optimise": "optimise"},
+      "expect": ["£12,570.00", "£55,764.87"],
+      "source": "Independent brute-force sweep of every salary pound on GOV.UK 2026/27 rates (test_salary_dividend.js section E, 'marginal band, no allowance'): optimal salary 12,570, take-home 55,764.87."
+    },
+    {
+      "calculator": "side-income-tax-calculator",
+      "path": "/calculators/side-income-tax-calculator.php",
+      "fill": {"tax-year": "2026/27", "res-scot": "scotland", "main-salary": "salary", "main-income": "40000", "activity": "trading", "side-gross": "5000", "side-expenses": "0"},
+      "expect": ["£910.98", "Scottish higher rate"],
+      "source": "Scottish income tax rates and bands 2026/27 (Scottish Government, GOV.SCOT) by hand: 3,662 x 21% + 338 x 42% = 910.98 on the 5,000 side income."
+    },
+    {
+      "calculator": "state-pension-topup-calculator",
+      "path": "/calculators/state-pension-topup-calculator.php",
+      "fill": {"dob": "1971-06-15", "qualifying-years": "33"},
+      "expect": ["2 of 7", "£1,830.40", "£4,784.00"],
+      "source": "GOV.UK voluntary National Insurance rates and the full new State Pension, by hand: 35 - 33 = 2 years add pension; the cheapest are 2024/25 (17.45 x 52 = 907.40) and 2025/26 (17.75 x 52 = 923.00) = 1,830.40; the other 5 at 18.40 x 52 = 956.80 each = 4,784.00, not counted."
+    },
+    {
+      "calculator": "tapered-annual-allowance-calculator",
+      "path": "/calculators/tapered-annual-allowance-calculator.php",
+      "fill": {"taxable-income": "250000", "employer-contributions": "50000"},
+      "expect": ["£40,000"],
+      "source": "FA 2004 s228ZA (HMRC PTM057100) by hand: adjusted income 300,000 - 260,000 = 40,000; half = 20,000 reduction; 60,000 - 20,000 = 40,000."
+    },
+    {
+      "calculator": "capital-gains-tax-scotland-calculator",
+      "path": "/calculators/capital-gains-tax-scotland-calculator.php",
+      "fill": {"jurisdiction": "scotland", "income": "50270", "asset-type": "shares", "gain": "10000", "allowance-used": "0"},
+      "expect": ["£1,680.00"],
+      "source": "GOV.UK CGT rates 2026/27 by hand: income exactly 50,270 leaves no basic-rate band, so (10,000 - 3,000) x 24% = 1,680.00. CGT is UK-wide (TCGA 1992 s1J(6))."
+    },
+    {
+      "calculator": "fire-calculator",
+      "path": "/calculators/fire-calculator.php",
+      "fill": {"dob": "1990-01-01", "retire-age": "45"},
+      "expect": ["£700,000", "12 years", "£336,000"],
+      "source": "By hand: FIRE number 28,000 / 4% = 700,000; normal minimum pension age 57 for this cohort (FA 2022 s10) - 45 = a 12-year bridge x 28,000 = 336,000."
+    },
+    {
+      "calculator": "safe-withdrawal-rate-calculator",
+      "path": "/calculators/safe-withdrawal-rate-calculator.php",
+      "fill": {"sipp-pot": "5000000", "isa-pot": "0", "net-spend": "900000"},
+      "expect": ["£1,391,780", "£268,275", "£1,123,505"],
+      "result_timeout": 45000,
+      "source": "Closed form by hand (I129): rUK 2026/27 with no Personal Allowance above 125,140, tax(T) = 0.45T - 13,797; the Lump Sum Allowance 268,275 (GOV.UK, Tax when you get a pension) caps the tax-free part; net = 0.55W + 134,520.75 = 900,000 gives W = 1,391,780 and taxable 1,123,505."
+    },
+    {
+      "calculator": "real-cost-of-living",
+      "path": "/calculators/real-cost-of-living.php",
+      "form": null,
+      "result": "#pinf-rate",
+      "expect_pattern": "^-?\\d+\\.\\d%$",
+      "result_timeout": 15000,
+      "source": "No frozen outside answer: the personal inflation rate is computed from ONS MM23 division rates that refresh each weekday, so any pinned figure goes stale within a month. This case proves the widget computes and renders a rate for the default household profile. The figures are checked at deploy by RCOL-PHP-001 against an independent model (D114)."
+    }
+  ]
+}

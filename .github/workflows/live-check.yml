@@ -1,0 +1,48 @@
+# TEMPLATE for the PUBLIC live-check repo (ukfinancetools organisation; S112 decision, 2026-10-13).
+# Copy to .github/workflows/live-check.yml THERE. It is not under this repo's .github/, so it never runs here.
+#
+# Every hour: INDEXABLE-001 on every URL that must be indexed, the HTTP status of every sitemap URL, and one
+# headless run per calculator with an outside-sourced expected result. The result file is committed by the run
+# itself, which (1) keeps a public history of outcomes and (2) keeps the schedule alive: GitHub disables a
+# scheduled workflow in a public repo after 60 days with no repository activity. No secrets: the alert is
+# GitHub's own failed-run email to the account that last changed this file. A cron run can be late at busy
+# times; the workspace daily digest's dead-man check reads results/latest.json checked_at and warns when it is
+# older than 3 hours.
+name: Live check (hourly)
+
+on:
+  schedule:
+    - cron: '7 * * * *'   # hourly at :07 (not :00, when GitHub's queue is longest)
+  workflow_dispatch:
+
+permissions:
+  contents: write   # the result commit only
+
+concurrency:
+  group: live-check
+  cancel-in-progress: false
+
+jobs:
+  live-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: puppeteer-core (the runner's preinstalled Chrome; no browser download)
+        run: npm install --no-save puppeteer-core@23
+
+      - name: Live check
+        id: check
+        # Exit 1 = a finding, 2 = the check could not run. Both fail the job (the email), after the result is kept.
+        run: python3 live_check.py --base https://www.ukfinancetools.co.uk
+
+      - name: Keep the result
+        if: always()
+        run: |
+          git config user.name "ukft-live-check"
+          git config user.email "live-check@users.noreply.github.com"
+          git add results/latest.json results/history.jsonl
+          git commit -m "live check $(date -u +%Y-%m-%dT%H:%MZ): ${{ steps.check.outcome }}" || echo "nothing to commit"
+          git pull --rebase origin "${GITHUB_REF_NAME}" || true
+          git push origin "HEAD:${GITHUB_REF_NAME}"
