@@ -1,6 +1,6 @@
 {
  "_doc": "The COMMITTED indexable list (a one-way ratchet, test-scripts/deploy-guard/sync_live_check.py). The deploy fails when a URL here is not served indexable by src/. A URL leaves only through sync_live_check.py --remove PATH --reason, recorded under 'removed'. --write adds new indexable URLs. The hourly live check reads this list plus the live sitemap.",
- "_from": "10e3593",
+ "_from": "27abbea",
  "indexable": [
   "/about.php",
   "/affiliate-policy.php",

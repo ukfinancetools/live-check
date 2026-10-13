@@ -14,10 +14,12 @@ public live-check repo with no access to the site repo. Two comparisons, every d
      comma-digit on either side, '%' after a percent, '£' before money, 'month' after a months value, and
      no bare-number fallback. A missing figure means the page states a value the registry no longer gives:
      a stale page file, or a value typed into the page.
-     LIMIT. The page text is searched as a whole. Where the page's typed prose also states the registry
-     value (the VAT page types '20%' in its prose; the property CGT page types '9 months'), a typed change
-     at the ukft_param() render point is not seen. Catching that needs ukft_param() to mark its output (for
-     example a data-param attribute in src/includes/tax_params.php) so this compares at the marker.
+     ANCHORS (I319). The sync renders each page with the value set to a stand-in and records the page text on
+     each side of every place the figure prints. Where a row has anchors, the registry value must appear
+     BETWEEN them, once per anchor, so a value typed at a render point fails even when the page's prose also
+     types the true value (VAT '20%', PRR '9 months'). Digits inside an anchor match any number, so another
+     figure's change beside it does not break it. A row with no anchor (an attribute, a script value) is
+     searched on the whole page, as before.
 FLOORS. An empty stated list is an error; a figure count below the list, or a list that is not the length
 sync-manifest.json records, is a finding.
 A changed registry value that no live page reflects, or a live page that states a figure the registry does
@@ -130,6 +132,47 @@ def text_of(page_html):
     return re.sub(r"\s+", " ", html.unescape(t)).replace("\u00a0", " ")
 
 
+MONTH_RX = "(?:" + "|".join(MONTHS) + ")"
+VARIABLE = re.compile(r"([0-9][0-9.,]*|" + "|".join(MONTHS) + ")")
+
+
+def anchor_rx(text):
+    """An anchor's words as a pattern. Digits match any number and a month name any month, because other registry
+    figures and dates can sit beside a render point and change on their own (audit F3); the rest is exact."""
+    out = []
+    for part in VARIABLE.split(text):
+        if not part:
+            continue
+        out.append(r"[0-9][0-9.,]*" if part[:1].isdigit() else MONTH_RX if part in MONTHS else re.escape(part))
+    return "".join(out)
+
+
+def anchor_status(t, anchors, forms):
+    """(typed, stale) for one stated row. Each is a list of (left, right, want, got).
+    typed: the anchor's words are on the page as many times as recorded, but with something other than the registry
+    value between them - a typed or stale value at the render point (a finding).
+    stale: the anchor's words are not on the page as often as recorded - the copy beside the figure changed since the
+    sync, so this place cannot be judged (a notice: re-run sync_live_check.py --write and copy the list)."""
+    need = {}
+    for an in anchors:
+        k = (an["left"], an["right"])
+        need[k] = need.get(k, 0) + 1
+    core = "(?:" + "|".join(rx for _, rx in forms) + ")"
+    typed, stale = [], []
+    for (left, right), want in need.items():
+        got = len(re.findall(anchor_rx(left) + core + anchor_rx(right), t))
+        if got >= want:
+            continue
+        loose = len(re.findall(anchor_rx(left) + r".{1,30}?" + anchor_rx(right), t))
+        (typed if loose >= want else stale).append((left, right, want, got))
+    return typed, stale
+
+
+def at_anchors(t, anchors, forms):
+    """The typed list of anchor_status (each a finding)."""
+    return anchor_status(t, anchors, forms)[0]
+
+
 def compare_engine(reg_bytes, params, engine_js):
     find = []
     m = re.search(re.escape(BEGIN) + r".*?registry sha256:([0-9a-f]{64}) \*/\s*const PARAMS = (\{.*?\});\s*" + re.escape(END), engine_js, re.S)
@@ -149,8 +192,9 @@ def compare_engine(reg_bytes, params, engine_js):
     return find, len(block)
 
 
-def compare_pages(base, params, stated):
+def compare_pages(base, params, stated, notices=None):
     find, n = [], 0
+    notices = [] if notices is None else notices
     by_page = {}
     for s in stated:
         by_page.setdefault(s["page"], []).append(s)
@@ -170,6 +214,14 @@ def compare_pages(base, params, stated):
                 continue
             if not any(re.search(rx, t) for _, rx in forms):
                 find.append("page %s states no %s for %s %s (registry value %s, rendered %s)" % (page, s["param"], s.get("at") or "(any)", s.get("nation", "uk"), val, " or ".join(lb for lb, _ in forms)))
+                continue
+            typed, stale = anchor_status(t, s.get("anchors") or [], forms)
+            for left, right, want, got in typed:
+                find.append("page %s: %s %s %s is not %s at its render point '...%s[ ]%s...' (%d of %d place(s): another value is printed there)" % (
+                    page, s["param"], s.get("at") or "(any)", s.get("nation", "uk"), " or ".join(lb for lb, _ in forms), left[-16:], right[:16], got, want))
+            for left, right, want, got in stale:
+                notices.append("page %s: %s render point '...%s[ ]%s...' cannot be judged: the words beside it changed since the sync "
+                               "(run sync_live_check.py --write in the site repo and copy stated-values.json here)" % (page, s["param"], left[-16:], right[:16]))
     return find, n
 
 
@@ -194,7 +246,8 @@ def main(argv=None):
     if not stated:
         print("VALUES-LIVE ERROR %s lists no stated figure; the comparison would prove nothing" % a.stated)
         return 2
-    f_pg, n_pg = compare_pages(base, params, stated)
+    notices = []
+    f_pg, n_pg = compare_pages(base, params, stated, notices)
     findings = f_eng + f_pg
     # Floors (audit round 1, finding 9): every listed figure is compared, and the list is the one the sync made.
     if n_pg != len(stated):
@@ -207,10 +260,12 @@ def main(argv=None):
         findings.append("floor: %s lists %d stated figure(s), sync-manifest.json records %d" % (os.path.basename(a.stated), len(stated), want))
     os.makedirs(a.out, exist_ok=True)
     json.dump({"checked_at": started.strftime("%Y-%m-%dT%H:%M:%SZ"), "base": base, "engine_params": n_eng, "page_figures": n_pg,
-               "findings": findings, "outcome": "fail" if findings else "pass"},
+               "findings": findings, "notices": notices, "outcome": "fail" if findings else "pass"},
               open(os.path.join(a.out, "values-latest.json"), "w", encoding="utf-8"), indent=1)
     for f in findings:
         print("FAIL VALUES-LIVE " + f)
+    for x in notices:
+        print("NOTICE VALUES-LIVE " + x)
     print("VALUES-LIVE %s: %d finding(s); %d engine parameter(s), %d page figure(s)" % ("FAIL" if findings else "PASS", len(findings), n_eng, n_pg))
     return 1 if findings else 0
 

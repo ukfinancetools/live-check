@@ -583,6 +583,24 @@ def apache_paths():
     return exe, mods, os.path.join(mods, php[-1])
 
 
+def _php_flags():
+    """The shared PHP settings (PHP-FLAGS-001, I322): errors shown in the page whatever php.ini says, so a warning
+    breaks the page shape this check reads. Read only when a test server starts. The module runs from
+    test-scripts/deploy-guard/ and, in the site repo, from its synced copy in tools/live-check/; the public
+    live-check repo never starts a test server, and has no test-scripts/ at all."""
+    here = os.path.dirname(os.path.abspath(__file__))
+    for d in (os.path.join(here, "..", "shared"), os.path.join(here, "..", "..", "test-scripts", "shared")):
+        d = os.path.normpath(d)
+        if os.path.isfile(os.path.join(d, "php_flags.py")):
+            break
+    else:
+        raise RuntimeError("test-scripts/shared/php_flags.py not found near %s: a test server needs it" % __file__)
+    if d not in sys.path:
+        sys.path.insert(0, d)
+    import php_flags
+    return php_flags
+
+
 def apache_conf(docroot, port, tmp, mods, php_so):
     lines = ['ServerRoot "/etc/apache2"', "PidFile %s/httpd.pid" % tmp, "Listen 127.0.0.1:%d" % port]
     for m in APACHE_MODULES:
@@ -599,6 +617,10 @@ def apache_conf(docroot, port, tmp, mods, php_so):
         '<FilesMatch "\\.php$">', "    SetHandler application/x-httpd-php", "</FilesMatch>",
         # No opcode or realpath cache: a fixture re-plants the docroot between requests and must see each change.
         "php_admin_flag opcache.enable Off", "php_admin_value realpath_cache_size 0",
+        # No PHP-FLAGS-001 settings here, by design (I322, CI run 38457363978): Apache mode serves the pages as the
+        # live host does, where errors are not shown and a fatal error before output is a 500. With errors shown,
+        # Apache answered 200 with the error text, so this check would judge a page the live host never serves. PHP
+        # warnings are caught by the census renders (RULES-001, TYPED-001), which use the shared settings.
         "DirectoryIndex index.php",
         "SSLEngine on", "SSLCertificateFile %s/cert.pem" % tmp, "SSLCertificateKeyFile %s/key.pem" % tmp,
     ]
@@ -673,8 +695,8 @@ class PhpServer:
             raise RuntimeError("php -S docroot %s is not a directory" % self.docroot)
         # No opcode or realpath cache, as the Apache server: a runner php.ini that enables opcache with a
         # revalidate delay serves a file planted seconds after its first request from the stale cache.
-        self.proc = subprocess.Popen([php, "-d", "opcache.enable=0", "-d", "opcache.enable_cli=0", "-d", "realpath_cache_size=0",
-                                      "-S", "127.0.0.1:%d" % self.port, "-t", self.docroot],
+        self.proc = subprocess.Popen([php, "-d", "opcache.enable=0", "-d", "opcache.enable_cli=0", "-d", "realpath_cache_size=0"]
+                                     + _php_flags().html() + ["-S", "127.0.0.1:%d" % self.port, "-t", self.docroot],
                                      stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         if not wait_port(self.port, self.proc):
             self.__exit__(None, None, None)
