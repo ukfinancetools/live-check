@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-14T19:18:49Z",
+ "checked_at": "2026-10-14T23:09:10Z",
  "base": "https://www.ukfinancetools.co.uk",
  "mode": "live",
  "expected_urls_from": "27abbea",
@@ -16,129 +16,118 @@
    "extra_urls_checked": 0
   },
   "calculators": {
-   "findings": [
-    "calculator vat-calculator: result #results-container did not populate within 8000 ms after 3 submit(s); page error(s): Cannot read properties of undefined (reading 'value')",
-    "calculator iht-planner: HTTP 525 loading https://www.ukfinancetools.co.uk/calculators/iht-planner.php"
-   ],
+   "findings": [],
    "results": [
     {
      "calculator": "vat-calculator",
      "path": "/calculators/vat-calculator.php",
-     "ok": false,
-     "problems": [
-      "result #results-container did not populate within 8000 ms after 3 submit(s)",
-      "page error(s): Cannot read properties of undefined (reading 'value')"
-     ],
-     "ms": 34214
+     "ok": true,
+     "problems": [],
+     "ms": 3671
     },
     {
      "calculator": "dividend-tax-calculator",
      "path": "/calculators/dividend-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1247
+     "ms": 1136
     },
     {
      "calculator": "self-employed-tax-calculator",
      "path": "/calculators/self-employed-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 8831
+     "ms": 1130
     },
     {
      "calculator": "shares-cgt-calculator",
      "path": "/calculators/shares-cgt-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 8174
+     "ms": 1165
     },
     {
      "calculator": "property-cgt-calculator",
      "path": "/calculators/property-cgt-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 10057
+     "ms": 1069
     },
     {
      "calculator": "iht-planner",
      "path": "/calculators/iht-planner.php",
-     "ok": false,
-     "problems": [
-      "HTTP 525 loading https://www.ukfinancetools.co.uk/calculators/iht-planner.php"
-     ],
-     "ms": 11288
+     "ok": true,
+     "problems": [],
+     "ms": 1060
     },
     {
      "calculator": "pension-lump-sum-tax-calculator",
      "path": "/calculators/pension-lump-sum-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 4866
+     "ms": 1239
     },
     {
      "calculator": "salary-dividend-calculator",
      "path": "/calculators/salary-dividend-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 4918
+     "ms": 1614
     },
     {
      "calculator": "side-income-tax-calculator",
      "path": "/calculators/side-income-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 4679
+     "ms": 1067
     },
     {
      "calculator": "state-pension-topup-calculator",
      "path": "/calculators/state-pension-topup-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 3567
+     "ms": 1578
     },
     {
      "calculator": "tapered-annual-allowance-calculator",
      "path": "/calculators/tapered-annual-allowance-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1439
+     "ms": 1171
     },
     {
      "calculator": "capital-gains-tax-scotland-calculator",
      "path": "/calculators/capital-gains-tax-scotland-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1084
+     "ms": 1088
     },
     {
      "calculator": "fire-calculator",
      "path": "/calculators/fire-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1448
+     "ms": 1196
     },
     {
      "calculator": "safe-withdrawal-rate-calculator",
      "path": "/calculators/safe-withdrawal-rate-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 8749
+     "ms": 6611
     },
     {
      "calculator": "real-cost-of-living",
      "path": "/calculators/real-cost-of-living.php",
      "ok": true,
      "problems": [],
-     "ms": 2088
+     "ms": 1563
     }
    ]
   }
  },
- "findings": [
-  "calculator vat-calculator: result #results-container did not populate within 8000 ms after 3 submit(s); page error(s): Cannot read properties of undefined (reading 'value')",
-  "calculator iht-planner: HTTP 525 loading https://www.ukfinancetools.co.uk/calculators/iht-planner.php"
- ],
- "outcome": "fail",
+ "findings": [],
+ "outcome": "pass",
  "urls_checked": 62,
- "duration_s": 164.1
+ "duration_s": 95.0
 }
