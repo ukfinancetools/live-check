@@ -21,6 +21,7 @@ taken from the site's own code, data or pages.
 - `results/latest.json`: the last hourly result, with every finding.
 - `results/history.jsonl`: one line per hourly run.
 - `results/values-latest.json`: the last daily figures check.
+- `results/planted-tests.jsonl`: one line per monthly planted test. A known fault is put on the staging copy of the site, never the live site, and the check must report it and nothing else.
 
 A failed run means the check found a problem (exit code 1) or could not run (exit code 2). A run that could
 not run never counts as a pass.
