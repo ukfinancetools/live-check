@@ -53,8 +53,8 @@
       "calculator": "pension-lump-sum-tax-calculator",
       "path": "/calculators/pension-lump-sum-tax-calculator.php",
       "fill": {"pot-1-method": "UFPLS", "pot-1-potValue": "20000"},
-      "expect": ["£5,128.19"],
-      "source": "HMRC PAYE emergency tax routine (PAYErout), code 1257L month 1, on the 15,000 taxable slice of a 20,000 UFPLS, worked by hand from PAYErout in test-scripts/engine-oracle/test_emergency_tax.js (the 'rUK 15,000 taxable/mo' and 'Month 1: 15,000 withholds' cases): 5,128.19."
+      "expect": ["£5,128.20"],
+      "source": "HMRC PAYE emergency tax routine (PAYErout v24.0), code 1257L month 1, on the 15,000 taxable slice of a 20,000 UFPLS, worked by hand: free pay 2 x 416.67 + 214.92 = 1,048.26 (4.3.1), Tn = 13,951, threshold tax 42,516 / 12 = 3,543.0000 (Definition 11, Appendix A), tax 3,543.0000 + (13,951 - 10,428.3333) x 45% = 5,128.2000, so 5,128.20 (I458, D281: was 5,128.19). The same working is in test-scripts/engine-oracle/test_emergency_tax.js ('rUK 15,000 taxable/mo' and 'Month 1: 15,000 withholds')."
     },
     {
       "calculator": "salary-dividend-calculator",
