@@ -1,12 +1,14 @@
 {
- "checked_at": "2026-10-24T21:16:32Z",
+ "checked_at": "2026-10-24T22:16:32Z",
  "base": "https://www.ukfinancetools.co.uk",
  "mode": "live",
  "expected_urls_from": "27abbea",
  "listed_urls": 62,
  "parts": {
   "indexing": {
-   "findings": [],
+   "findings": [
+    "/guides/capital-gains-tax-shares.php has 0 canonical links (0 in the HTML, 0 in a Link header)"
+   ],
    "urls": 64,
    "from_list": 62,
    "from_sitemap_only": [
@@ -26,111 +28,113 @@
      "path": "/calculators/vat-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1997
+     "ms": 2011
     },
     {
      "calculator": "dividend-tax-calculator",
      "path": "/calculators/dividend-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1112
+     "ms": 909
     },
     {
      "calculator": "self-employed-tax-calculator",
      "path": "/calculators/self-employed-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1109
+     "ms": 873
     },
     {
      "calculator": "shares-cgt-calculator",
      "path": "/calculators/shares-cgt-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1587
+     "ms": 898
     },
     {
      "calculator": "property-cgt-calculator",
      "path": "/calculators/property-cgt-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1065
+     "ms": 885
     },
     {
      "calculator": "iht-planner",
      "path": "/calculators/iht-planner.php",
      "ok": true,
      "problems": [],
-     "ms": 1061
+     "ms": 876
     },
     {
      "calculator": "pension-lump-sum-tax-calculator",
      "path": "/calculators/pension-lump-sum-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1570
+     "ms": 886
     },
     {
      "calculator": "salary-dividend-calculator",
      "path": "/calculators/salary-dividend-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1663
+     "ms": 938
     },
     {
      "calculator": "side-income-tax-calculator",
      "path": "/calculators/side-income-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 846
+     "ms": 878
     },
     {
      "calculator": "state-pension-topup-calculator",
      "path": "/calculators/state-pension-topup-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1581
+     "ms": 914
     },
     {
      "calculator": "tapered-annual-allowance-calculator",
      "path": "/calculators/tapered-annual-allowance-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1059
+     "ms": 870
     },
     {
      "calculator": "capital-gains-tax-scotland-calculator",
      "path": "/calculators/capital-gains-tax-scotland-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1061
+     "ms": 868
     },
     {
      "calculator": "fire-calculator",
      "path": "/calculators/fire-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1572
+     "ms": 886
     },
     {
      "calculator": "safe-withdrawal-rate-calculator",
      "path": "/calculators/safe-withdrawal-rate-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 6562
+     "ms": 6539
     },
     {
      "calculator": "real-cost-of-living",
      "path": "/calculators/real-cost-of-living.php",
      "ok": true,
      "problems": [],
-     "ms": 1563
+     "ms": 2085
     }
    ]
   }
  },
- "findings": [],
- "outcome": "pass",
+ "findings": [
+  "/guides/capital-gains-tax-shares.php has 0 canonical links (0 in the HTML, 0 in a Link header)"
+ ],
+ "outcome": "fail",
  "urls_checked": 64,
- "duration_s": 94.2
+ "duration_s": 35.5
 }
