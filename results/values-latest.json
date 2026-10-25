@@ -1,12 +1,15 @@
 {
- "checked_at": "2026-10-24T11:13:00Z",
+ "checked_at": "2026-10-25T11:43:08Z",
  "base": "https://www.ukfinancetools.co.uk",
  "engine_params": 232,
  "page_figures": 25,
- "findings": [],
+ "findings": [
+  "page / states no ni.class1.secondary_threshold for 2026/27 uk (registry value 5000, rendered \u00a35,000)"
+ ],
  "notices": [
+  "page /calculators/dividend-tax-calculator.php: ni.class1.secondary_threshold render point '... paid above the [ ] secondary thres...' cannot be judged: the words beside it changed since the sync (run sync_live_check.py --write in the site repo and copy stated-values.json here)",
   "page /guides/trading-allowance-side-income.php: cgt.chattels_exemption_limit render point '...d for more than [ ]), while buying ...' cannot be judged: the words beside it changed since the sync (run sync_live_check.py --write in the site repo and copy stated-values.json here)",
   "page /guides/trading-allowance-side-income.php: cgt.chattels_exemption_limit render point '...for more than [ ], but that is ra...' cannot be judged: the words beside it changed since the sync (run sync_live_check.py --write in the site repo and copy stated-values.json here)"
  ],
- "outcome": "pass"
+ "outcome": "fail"
 }
