@@ -64,6 +64,13 @@
       "source": "Independent brute-force sweep of every salary pound on GOV.UK 2026/27 rates (test_salary_dividend.js section E, 'marginal band, no allowance'): optimal salary 12,570, take-home 55,764.87."
     },
     {
+      "calculator": "sole-trader-vs-limited-company-calculator",
+      "path": "/calculators/sole-trader-vs-limited-company-calculator.php",
+      "fill": {"profit": "80000", "res-ruk": "england", "other-income": "0", "take-all": "all", "running-costs": "0", "ea-no": "no"},
+      "expect": ["£57,711", "£55,765"],
+      "source": "GOV.UK 2026/27 rates (Income Tax bands, self-employed NI, employer NI, Corporation Tax with marginal relief, dividend tax) by hand, for 80,000 of profit in England with no other income. Sole trader: Income Tax 37,700 x 20% + 29,730 x 40% = 19,432; Class 4 37,700 x 6% + 29,730 x 2% = 2,856.60; take-home 57,711.40. Company, all taken out, salary 12,570: employer NI 7,570 x 15% = 1,135.50; Corporation Tax on 66,294.50 = 16,573.63 - 3/200 x 183,705.50 = 13,818.04; dividends 52,476.46 taxed 37,200 x 10.75% + 14,776.46 x 35.75% = 9,281.58 after the 500 allowance; take-home 12,570 + 52,476.46 - 9,281.58 = 55,764.88."
+    },
+    {
       "calculator": "side-income-tax-calculator",
       "path": "/calculators/side-income-tax-calculator.php",
       "fill": {"tax-year": "2026/27", "res-scot": "scotland", "main-salary": "salary", "main-income": "40000", "activity": "trading", "side-gross": "5000", "side-expenses": "0"},
@@ -114,6 +121,12 @@
       "expect_pattern": "^-?\\d+\\.\\d%$",
       "result_timeout": 15000,
       "source": "No frozen outside answer: the personal inflation rate is computed from ONS MM23 division rates that refresh each weekday, so any pinned figure goes stale within a month. This case proves the widget computes and renders a rate for the default household profile. The figures are checked at deploy by RCOL-PHP-001 against an independent model (D114)."
+    }
+  ],
+  "not_covered": [
+    {
+      "path": "/calculators/pension-drawdown-backtester.php",
+      "reason": "I387 (2026-10-22): the results come from a web worker that runs the plan over 121 UK start years; test_drawdown_bt.js (every push) checks the worker and the page against the independent Python oracle, the page's default form included. A live-check entry with fixed inputs is an INBOX item."
     }
   ]
 }
