@@ -1,406 +1,143 @@
 {
- "checked_at": "2026-11-08T02:16:30Z",
+ "checked_at": "2026-11-08T03:15:53Z",
  "base": "https://www.ukfinancetools.co.uk",
  "mode": "live",
  "expected_urls_from": "971c974e",
  "listed_urls": 65,
  "parts": {
   "indexing": {
-   "findings": [
-    "sitemap.xml does not start with <?xml ('<!DOCTYPE html>\\n<html lang=\"en\">\\n<head>\\n')",
-    "/about.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/affiliate-policy.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/contact.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/disclaimer.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/glossary.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/how-we-check-our-figures.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/privacy.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/calculators/capital-gains-tax-scotland-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/calculators/dividend-tax-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/calculators/fire-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/calculators/iht-planner.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/calculators/ has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/calculators/pension-drawdown-backtester.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/calculators/property-cgt-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/calculators/safe-withdrawal-rate-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/calculators/salary-dividend-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/calculators/self-employed-tax-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/calculators/shares-cgt-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/calculators/side-income-tax-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/calculators/sole-trader-vs-limited-company-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/calculators/state-pension-topup-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/calculators/tapered-annual-allowance-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/calculators/vat-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/60-percent-tax-trap.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/allowable-expenses.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/bed-and-isa.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/bed-and-spouse.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/calculate-your-personal-inflation-rate.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/coast-fire.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/compound-interest.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/director-salary-dividend-strategy.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/electric-car-through-limited-company.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/employed-and-self-employed.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/employee-share-scheme-tax.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/flat-rate-scheme-limited-cost-trader.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/has-my-pay-kept-up-with-inflation.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/how-is-dividend-tax-calculated.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/how-long-will-my-pension-pot-last.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/how-to-calculate-cgt-on-property.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/how-to-calculate-cgt-on-shares.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/iht-pension-raid.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/iht-seven-year-rule.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/ has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/inheritance-tax-taper-relief.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/making-tax-digital-income-tax.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/pension-annual-allowance.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/pension-emergency-tax.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/pension-lump-sum-tax.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/private-residence-relief.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/property-cgt-reporting.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/retiring-before-57.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/self-assessment-tax-bill.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/self-employed-tax-pot-savings-interest.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/shares-bed-and-breakfast-rule.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/sole-trader-vs-ltd.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/state-pension-voluntary-ni-contributions.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/tapered-annual-allowance-charge.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/trading-allowance-side-income.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/vat-reclaim-before-registration.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/vat-registration-trap.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/guides/why-is-my-cost-of-living-higher-than-inflation.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-    "/news/autumn-budget-2025.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/dividend-tax-hike-april-2026.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/ is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/scottish-budget-2026-27.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-03-28.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-04-03.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-04-10.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-04-17.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-04-24.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-05-01.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-05-08.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-05-15.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-05-22.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-05-29.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-06-05.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-06-12.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-06-19.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-06-26.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-07-03.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-07-10.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-07-17.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-07-24.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-07-31.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-08-07.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-08-14.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-08-21.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-08-28.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-09-04.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-09-11.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-09-18.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-09-25.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-10-02.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-10-09.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-10-16.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/news/weekly-roundup-2026-10-23.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/sandbox/coast-fire-widget-preview.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-    "/sandbox/results-panel-preview.php is noindex by declaration but served indexable (no noindex header or meta tag)"
-   ],
-   "urls": 65,
+   "findings": [],
+   "urls": 67,
    "from_list": 65,
-   "from_sitemap_only": []
+   "from_sitemap_only": [
+    "/calculators/take-home-pay-calculator.php",
+    "/guides/marginal-tax-rates-uk.php"
+   ]
   },
   "sitemap_status": {
    "findings": [],
    "extra_urls_checked": 0
   },
   "calculators": {
-   "findings": [
-    "calculator vat-calculator: form #tool-form not found",
-    "calculator dividend-tax-calculator: form #tool-form not found",
-    "calculator self-employed-tax-calculator: form #tool-form not found",
-    "calculator shares-cgt-calculator: form #tool-form not found",
-    "calculator property-cgt-calculator: form #tool-form not found",
-    "calculator iht-planner: form #tool-form not found",
-    "calculator pension-lump-sum-tax-calculator: exception: Cannot read properties of null (reading 'requestSubmit')",
-    "calculator salary-dividend-calculator: form #tool-form not found",
-    "calculator sole-trader-vs-limited-company-calculator: form #tool-form not found",
-    "calculator side-income-tax-calculator: form #tool-form not found",
-    "calculator state-pension-topup-calculator: form #tool-form not found",
-    "calculator tapered-annual-allowance-calculator: form #tool-form not found",
-    "calculator capital-gains-tax-scotland-calculator: form #tool-form not found",
-    "calculator fire-calculator: form #tool-form not found",
-    "calculator safe-withdrawal-rate-calculator: form #tool-form not found",
-    "calculator real-cost-of-living: result #pinf-rate did not populate within 15000 ms; page error(s): Unexpected token '<'"
-   ],
+   "findings": [],
    "results": [
     {
      "calculator": "vat-calculator",
      "path": "/calculators/vat-calculator.php",
-     "ok": false,
-     "problems": [
-      "form #tool-form not found"
-     ],
-     "ms": 741
+     "ok": true,
+     "problems": [],
+     "ms": 1812
     },
     {
      "calculator": "dividend-tax-calculator",
      "path": "/calculators/dividend-tax-calculator.php",
-     "ok": false,
-     "problems": [
-      "form #tool-form not found"
-     ],
-     "ms": 610
+     "ok": true,
+     "problems": [],
+     "ms": 850
     },
     {
      "calculator": "self-employed-tax-calculator",
      "path": "/calculators/self-employed-tax-calculator.php",
-     "ok": false,
-     "problems": [
-      "form #tool-form not found"
-     ],
-     "ms": 633
+     "ok": true,
+     "problems": [],
+     "ms": 859
     },
     {
      "calculator": "shares-cgt-calculator",
      "path": "/calculators/shares-cgt-calculator.php",
-     "ok": false,
-     "problems": [
-      "form #tool-form not found"
-     ],
-     "ms": 633
+     "ok": true,
+     "problems": [],
+     "ms": 886
     },
     {
      "calculator": "property-cgt-calculator",
      "path": "/calculators/property-cgt-calculator.php",
-     "ok": false,
-     "problems": [
-      "form #tool-form not found"
-     ],
-     "ms": 633
+     "ok": true,
+     "problems": [],
+     "ms": 844
     },
     {
      "calculator": "iht-planner",
      "path": "/calculators/iht-planner.php",
-     "ok": false,
-     "problems": [
-      "form #tool-form not found"
-     ],
-     "ms": 851
+     "ok": true,
+     "problems": [],
+     "ms": 841
     },
     {
      "calculator": "pension-lump-sum-tax-calculator",
      "path": "/calculators/pension-lump-sum-tax-calculator.php",
-     "ok": false,
-     "problems": [
-      "exception: Cannot read properties of null (reading 'requestSubmit')"
-     ],
-     "ms": 9069
+     "ok": true,
+     "problems": [],
+     "ms": 841
     },
     {
      "calculator": "salary-dividend-calculator",
      "path": "/calculators/salary-dividend-calculator.php",
-     "ok": false,
-     "problems": [
-      "form #tool-form not found"
-     ],
-     "ms": 830
+     "ok": true,
+     "problems": [],
+     "ms": 915
     },
     {
      "calculator": "sole-trader-vs-limited-company-calculator",
      "path": "/calculators/sole-trader-vs-limited-company-calculator.php",
-     "ok": false,
-     "problems": [
-      "form #tool-form not found"
-     ],
-     "ms": 617
+     "ok": true,
+     "problems": [],
+     "ms": 863
     },
     {
      "calculator": "side-income-tax-calculator",
      "path": "/calculators/side-income-tax-calculator.php",
-     "ok": false,
-     "problems": [
-      "form #tool-form not found"
-     ],
-     "ms": 616
+     "ok": true,
+     "problems": [],
+     "ms": 861
     },
     {
      "calculator": "state-pension-topup-calculator",
      "path": "/calculators/state-pension-topup-calculator.php",
-     "ok": false,
-     "problems": [
-      "form #tool-form not found"
-     ],
-     "ms": 616
+     "ok": true,
+     "problems": [],
+     "ms": 882
     },
     {
      "calculator": "tapered-annual-allowance-calculator",
      "path": "/calculators/tapered-annual-allowance-calculator.php",
-     "ok": false,
-     "problems": [
-      "form #tool-form not found"
-     ],
-     "ms": 634
+     "ok": true,
+     "problems": [],
+     "ms": 837
     },
     {
      "calculator": "capital-gains-tax-scotland-calculator",
      "path": "/calculators/capital-gains-tax-scotland-calculator.php",
-     "ok": false,
-     "problems": [
-      "form #tool-form not found"
-     ],
-     "ms": 617
+     "ok": true,
+     "problems": [],
+     "ms": 842
     },
     {
      "calculator": "fire-calculator",
      "path": "/calculators/fire-calculator.php",
-     "ok": false,
-     "problems": [
-      "form #tool-form not found"
-     ],
-     "ms": 615
+     "ok": true,
+     "problems": [],
+     "ms": 853
     },
     {
      "calculator": "safe-withdrawal-rate-calculator",
      "path": "/calculators/safe-withdrawal-rate-calculator.php",
-     "ok": false,
-     "problems": [
-      "form #tool-form not found"
-     ],
-     "ms": 617
+     "ok": true,
+     "problems": [],
+     "ms": 4814
     },
     {
      "calculator": "real-cost-of-living",
      "path": "/calculators/real-cost-of-living.php",
-     "ok": false,
-     "problems": [
-      "result #pinf-rate did not populate within 15000 ms",
-      "page error(s): Unexpected token '<'"
-     ],
-     "ms": 15861
+     "ok": true,
+     "problems": [],
+     "ms": 1570
     }
    ]
   }
  },
- "findings": [
-  "sitemap.xml does not start with <?xml ('<!DOCTYPE html>\\n<html lang=\"en\">\\n<head>\\n')",
-  "/about.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/affiliate-policy.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/contact.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/disclaimer.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/glossary.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/how-we-check-our-figures.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/privacy.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/calculators/capital-gains-tax-scotland-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/calculators/dividend-tax-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/calculators/fire-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/calculators/iht-planner.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/calculators/ has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/calculators/pension-drawdown-backtester.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/calculators/property-cgt-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/calculators/safe-withdrawal-rate-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/calculators/salary-dividend-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/calculators/self-employed-tax-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/calculators/shares-cgt-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/calculators/side-income-tax-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/calculators/sole-trader-vs-limited-company-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/calculators/state-pension-topup-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/calculators/tapered-annual-allowance-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/calculators/vat-calculator.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/60-percent-tax-trap.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/allowable-expenses.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/bed-and-isa.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/bed-and-spouse.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/calculate-your-personal-inflation-rate.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/coast-fire.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/compound-interest.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/director-salary-dividend-strategy.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/electric-car-through-limited-company.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/employed-and-self-employed.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/employee-share-scheme-tax.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/flat-rate-scheme-limited-cost-trader.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/has-my-pay-kept-up-with-inflation.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/how-is-dividend-tax-calculated.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/how-long-will-my-pension-pot-last.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/how-to-calculate-cgt-on-property.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/how-to-calculate-cgt-on-shares.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/iht-pension-raid.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/iht-seven-year-rule.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/ has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/inheritance-tax-taper-relief.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/making-tax-digital-income-tax.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/pension-annual-allowance.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/pension-emergency-tax.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/pension-lump-sum-tax.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/private-residence-relief.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/property-cgt-reporting.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/retiring-before-57.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/self-assessment-tax-bill.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/self-employed-tax-pot-savings-interest.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/shares-bed-and-breakfast-rule.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/sole-trader-vs-ltd.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/state-pension-voluntary-ni-contributions.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/tapered-annual-allowance-charge.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/trading-allowance-side-income.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/vat-reclaim-before-registration.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/vat-registration-trap.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/guides/why-is-my-cost-of-living-higher-than-inflation.php has 0 canonical links (0 in the HTML, 0 in a Link header)",
-  "/news/autumn-budget-2025.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/dividend-tax-hike-april-2026.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/ is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/scottish-budget-2026-27.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-03-28.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-04-03.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-04-10.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-04-17.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-04-24.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-05-01.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-05-08.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-05-15.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-05-22.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-05-29.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-06-05.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-06-12.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-06-19.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-06-26.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-07-03.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-07-10.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-07-17.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-07-24.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-07-31.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-08-07.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-08-14.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-08-21.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-08-28.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-09-04.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-09-11.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-09-18.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-09-25.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-10-02.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-10-09.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-10-16.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/news/weekly-roundup-2026-10-23.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/sandbox/coast-fire-widget-preview.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "/sandbox/results-panel-preview.php is noindex by declaration but served indexable (no noindex header or meta tag)",
-  "calculator vat-calculator: form #tool-form not found",
-  "calculator dividend-tax-calculator: form #tool-form not found",
-  "calculator self-employed-tax-calculator: form #tool-form not found",
-  "calculator shares-cgt-calculator: form #tool-form not found",
-  "calculator property-cgt-calculator: form #tool-form not found",
-  "calculator iht-planner: form #tool-form not found",
-  "calculator pension-lump-sum-tax-calculator: exception: Cannot read properties of null (reading 'requestSubmit')",
-  "calculator salary-dividend-calculator: form #tool-form not found",
-  "calculator sole-trader-vs-limited-company-calculator: form #tool-form not found",
-  "calculator side-income-tax-calculator: form #tool-form not found",
-  "calculator state-pension-topup-calculator: form #tool-form not found",
-  "calculator tapered-annual-allowance-calculator: form #tool-form not found",
-  "calculator capital-gains-tax-scotland-calculator: form #tool-form not found",
-  "calculator fire-calculator: form #tool-form not found",
-  "calculator safe-withdrawal-rate-calculator: form #tool-form not found",
-  "calculator real-cost-of-living: result #pinf-rate did not populate within 15000 ms; page error(s): Unexpected token '<'"
- ],
- "outcome": "fail",
- "urls_checked": 65,
- "duration_s": 64.9
+ "findings": [],
+ "outcome": "pass",
+ "urls_checked": 67,
+ "duration_s": 33.5
 }
