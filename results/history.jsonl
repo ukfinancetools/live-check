@@ -528,3 +528,4 @@
 {"checked_at": "2026-11-13T01:15:51Z", "outcome": "pass", "findings": 0, "duration_s": 67.6}
 {"checked_at": "2026-11-13T02:15:44Z", "outcome": "pass", "findings": 0, "duration_s": 83.3}
 {"checked_at": "2026-11-13T03:15:48Z", "outcome": "pass", "findings": 0, "duration_s": 89.0}
+{"checked_at": "2026-11-13T04:15:44Z", "outcome": "fail", "findings": 1, "duration_s": 92.3}
