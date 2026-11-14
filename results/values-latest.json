@@ -1,9 +1,11 @@
 {
- "checked_at": "2026-11-13T14:41:37Z",
+ "checked_at": "2026-11-14T13:38:37Z",
  "base": "https://www.ukfinancetools.co.uk",
  "engine_params": 237,
  "page_figures": 49,
  "findings": [],
- "notices": [],
+ "notices": [
+  "page /calculators/safe-withdrawal-rate-calculator.php: pen.lump_sum_allowance render point '... outside it. of [ ]. After that, ev...' cannot be judged: the words beside it changed since the sync (run sync_live_check.py --write in the site repo and copy stated-values.json here)"
+ ],
  "outcome": "pass"
 }
