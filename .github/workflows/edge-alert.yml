@@ -1,0 +1,33 @@
+# TEMPLATE for the PUBLIC live-check repo (copy to .github/workflows/edge-alert.yml THERE; I744, 2026-11-25).
+# It is not under this repo's .github/, so it never runs here.
+#
+# The alert channel of the laptop edge sampler (workspace test-scripts/edge-sampler/edge_sampler.py). Every 10
+# minutes the sampler makes 6 single requests (no retry) to the homepage through Cloudflare and judges the last
+# 30 minutes with EDGE-001 (live_fetch.first_attempt_verdict: more than 10% failed, or 2 or more with a 52x).
+# When the rule trips, it starts this workflow with a summary. The run FAILS ON PURPOSE, so GitHub sends its
+# failed-run email to the account that started it, the same channel as a failed hourly live check. No checkout,
+# no secrets, about 10 seconds of a public-repo runner (free). The summary goes through env, never into the script.
+name: Edge alert (laptop sampler)
+
+on:
+  workflow_dispatch:
+    inputs:
+      summary:
+        description: EDGE-001 summary from edge_sampler.py
+        required: true
+        type: string
+
+permissions: {}
+
+jobs:
+  alert:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Edge fault through Cloudflare (EDGE-001)
+        env:
+          SUMMARY: ${{ inputs.summary }}
+        run: |
+          printf 'EDGE-001: the laptop edge sampler saw too many failed requests through Cloudflare.\n%s\n' "$SUMMARY"
+          printf '::error title=EDGE-001 edge sampler::%s\n' "$(printf '%s' "$SUMMARY" | tr -d '\r\n' | cut -c1-900)"
+          exit 1
