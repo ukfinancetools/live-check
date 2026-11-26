@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-26T08:15:57Z",
+ "checked_at": "2026-11-26T09:16:01Z",
  "base": "https://www.ukfinancetools.co.uk",
  "mode": "live",
  "expected_urls_from": "971c974e",
@@ -7,11 +7,13 @@
  "parts": {
   "indexing": {
    "findings": [],
-   "urls": 69,
+   "urls": 71,
    "from_list": 65,
    "from_sitemap_only": [
+    "/calculators/ir35-contractor-calculator.php",
     "/calculators/mtd-income-tax-checker.php",
     "/calculators/take-home-pay-calculator.php",
+    "/guides/inside-vs-outside-ir35.php",
     "/guides/marginal-tax-rates-uk.php",
     "/partners.php"
    ]
@@ -28,118 +30,118 @@
      "path": "/calculators/vat-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 994
+     "ms": 3160
     },
     {
      "calculator": "dividend-tax-calculator",
      "path": "/calculators/dividend-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 851
+     "ms": 1164
     },
     {
      "calculator": "self-employed-tax-calculator",
      "path": "/calculators/self-employed-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 850
+     "ms": 1079
     },
     {
      "calculator": "shares-cgt-calculator",
      "path": "/calculators/shares-cgt-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 865
+     "ms": 1583
     },
     {
      "calculator": "property-cgt-calculator",
      "path": "/calculators/property-cgt-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 860
+     "ms": 1068
     },
     {
      "calculator": "iht-planner",
      "path": "/calculators/iht-planner.php",
      "ok": true,
      "problems": [],
-     "ms": 848
+     "ms": 1065
     },
     {
      "calculator": "pension-lump-sum-tax-calculator",
      "path": "/calculators/pension-lump-sum-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 853
+     "ms": 1584
     },
     {
      "calculator": "salary-dividend-calculator",
      "path": "/calculators/salary-dividend-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 880
+     "ms": 1236
     },
     {
      "calculator": "sole-trader-vs-limited-company-calculator",
      "path": "/calculators/sole-trader-vs-limited-company-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 842
+     "ms": 1122
     },
     {
      "calculator": "side-income-tax-calculator",
      "path": "/calculators/side-income-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 841
+     "ms": 1127
     },
     {
      "calculator": "state-pension-topup-calculator",
      "path": "/calculators/state-pension-topup-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 848
+     "ms": 1580
     },
     {
      "calculator": "tapered-annual-allowance-calculator",
      "path": "/calculators/tapered-annual-allowance-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 830
+     "ms": 1060
     },
     {
      "calculator": "capital-gains-tax-scotland-calculator",
      "path": "/calculators/capital-gains-tax-scotland-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 827
+     "ms": 1063
     },
     {
      "calculator": "fire-calculator",
      "path": "/calculators/fire-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 845
+     "ms": 1143
     },
     {
      "calculator": "safe-withdrawal-rate-calculator",
      "path": "/calculators/safe-withdrawal-rate-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 4890
+     "ms": 7924
     },
     {
      "calculator": "real-cost-of-living",
      "path": "/calculators/real-cost-of-living.php",
      "ok": true,
      "problems": [],
-     "ms": 1562
+     "ms": 1572
     }
    ]
   }
  },
  "findings": [],
  "outcome": "pass",
- "urls_checked": 69,
- "duration_s": 26.2
+ "urls_checked": 71,
+ "duration_s": 105.0
 }
