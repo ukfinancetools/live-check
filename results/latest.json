@@ -1,14 +1,12 @@
 {
- "checked_at": "2026-11-27T04:16:14Z",
+ "checked_at": "2026-11-27T05:16:11Z",
  "base": "https://www.ukfinancetools.co.uk",
  "mode": "live",
  "expected_urls_from": "971c974e",
  "listed_urls": 65,
  "parts": {
   "indexing": {
-   "findings": [
-    "/guides/state-pension-voluntary-ni-contributions.php has 0 canonical links (0 in the HTML, 0 in a Link header)"
-   ],
+   "findings": [],
    "urls": 71,
    "from_list": 65,
    "from_sitemap_only": [
@@ -32,120 +30,118 @@
      "path": "/calculators/vat-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 2112
+     "ms": 2756
     },
     {
      "calculator": "dividend-tax-calculator",
      "path": "/calculators/dividend-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1096
+     "ms": 1191
     },
     {
      "calculator": "self-employed-tax-calculator",
      "path": "/calculators/self-employed-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1128
+     "ms": 1164
     },
     {
      "calculator": "shares-cgt-calculator",
      "path": "/calculators/shares-cgt-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1118
+     "ms": 1219
     },
     {
      "calculator": "property-cgt-calculator",
      "path": "/calculators/property-cgt-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 952
+     "ms": 1127
     },
     {
      "calculator": "iht-planner",
      "path": "/calculators/iht-planner.php",
      "ok": true,
      "problems": [],
-     "ms": 1092
+     "ms": 1078
     },
     {
      "calculator": "pension-lump-sum-tax-calculator",
      "path": "/calculators/pension-lump-sum-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1124
+     "ms": 1595
     },
     {
      "calculator": "salary-dividend-calculator",
      "path": "/calculators/salary-dividend-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1180
+     "ms": 1692
     },
     {
      "calculator": "sole-trader-vs-limited-company-calculator",
      "path": "/calculators/sole-trader-vs-limited-company-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 929
+     "ms": 1108
     },
     {
      "calculator": "side-income-tax-calculator",
      "path": "/calculators/side-income-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 920
+     "ms": 1088
     },
     {
      "calculator": "state-pension-topup-calculator",
      "path": "/calculators/state-pension-topup-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1081
+     "ms": 1595
     },
     {
      "calculator": "tapered-annual-allowance-calculator",
      "path": "/calculators/tapered-annual-allowance-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1081
+     "ms": 1147
     },
     {
      "calculator": "capital-gains-tax-scotland-calculator",
      "path": "/calculators/capital-gains-tax-scotland-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1084
+     "ms": 1086
     },
     {
      "calculator": "fire-calculator",
      "path": "/calculators/fire-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1093
+     "ms": 1593
     },
     {
      "calculator": "safe-withdrawal-rate-calculator",
      "path": "/calculators/safe-withdrawal-rate-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 9202
+     "ms": 10528
     },
     {
      "calculator": "real-cost-of-living",
      "path": "/calculators/real-cost-of-living.php",
      "ok": true,
      "problems": [],
-     "ms": 2083
+     "ms": 2079
     }
    ]
   }
  },
- "findings": [
-  "/guides/state-pension-voluntary-ni-contributions.php has 0 canonical links (0 in the HTML, 0 in a Link header)"
- ],
- "outcome": "fail",
+ "findings": [],
+ "outcome": "pass",
  "urls_checked": 71,
- "duration_s": 75.2
+ "duration_s": 110.1
 }
