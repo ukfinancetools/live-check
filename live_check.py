@@ -15,6 +15,11 @@ FLOORS (audit round 1, finding 9): an empty committed list is an error; a list s
 sync-manifest.json records, or fewer URLs checked than the list holds, is a finding.
 Writes results/latest.json (the dead-man check in the workspace daily digest reads its checked_at) and appends
 one line to results/history.jsonl. Every fetch goes through live_fetch.py (a Cloudflare 52x is retried).
+EDGE-001 (I744, 2026-11-25): a retry that recovers hid a 5.5-hour edge fault (25 to 60% of requests failed and
+every run passed). So latest.json keeps EVERY first attempt (time UTC, ms, status or error, cf-ray) under 'edge',
+each fetch that passed only on a retry is printed as a NOTE and kept, and live_fetch.first_attempt_verdict() turns
+too many failed first attempts into a finding (more than 10% of fetches, or 2 or more fetches with a 52x). The
+calculator runs in Chrome are not counted: their page loads do not go through live_fetch.
 
 THE MONTHLY PLANTED TEST on staging: staging serves the overlay (noindex header, Disallow-all robots.txt)
 on purpose, so a plain run there always fails. Run once unplanted with --baseline FILE, plant the fault,
@@ -132,6 +137,7 @@ def main(argv=None):
     base = a.base.rstrip("/")
     mode = "php-builtin" if a.php_builtin else ("live" if base.startswith(LIVE) else "base")
     started = datetime.datetime.now(datetime.timezone.utc)
+    live_fetch.reset_attempts()
     exp = json.load(open(a.urls, encoding="utf-8"))
     listed, noindex = list(exp.get("indexable", [])), list(exp.get("noindex", []))
     if not listed:
@@ -164,7 +170,20 @@ def main(argv=None):
         f3, res3, err3 = calculators(base, a.calculators, [x for x in a.only.split(",") if x])
         result["parts"]["calculators"] = {"findings": f3, "results": res3}
         error = error or err3
-    findings = floor + f1 + f2 + f3
+    edge = live_fetch.first_attempt_verdict()
+    f4 = []
+    if edge["tripped"]:
+        f4.append("EDGE-001 first attempts: %s; first failures: %s" % (edge["reason"], "; ".join(
+            "%s %s" % (r["url"].replace(base, "") or "/", r["error"] or "HTTP %s ray %s" % (r["status"], r["ray"])) for r in edge["failed"][:6])))
+    firsts = [r for r in live_fetch.ATTEMPTS if r["attempt"] == 1]
+    result["edge"] = {"rule": "EDGE-001: more than %.0f%% of first attempts failed, or %d or more fetches met a 52x"
+                      % (live_fetch.FIRST_FAIL_SHARE * 100, live_fetch.FETCHES_52X_MIN),
+                      "fetches": edge["fetches"], "first_failed": edge["first_failed"], "share": edge["share"],
+                      "fetches_52x": edge["fetches_52x"], "tripped": edge["tripped"], "reason": edge["reason"],
+                      "dropped": edge["dropped"],
+                      "recovered_on_retry": [{"url": r["url"], "first": r["error"] or r["status"], "ray": r["ray"], "t": r["t"]} for r in edge["recovered"]],
+                      "first_attempts": [{k: r[k] for k in ("t", "ms", "status", "ray", "error", "url")} for r in firsts]}
+    findings = floor + f1 + f2 + f3 + f4
     ignored = 0
     if a.diff_against:
         try:
@@ -185,9 +204,15 @@ def main(argv=None):
     json.dump(result, open(os.path.join(a.out, "latest.json"), "w", encoding="utf-8"), indent=1)
     with open(os.path.join(a.out, "history.jsonl"), "a", encoding="utf-8") as h:
         h.write(json.dumps({"checked_at": result["checked_at"], "outcome": result["outcome"], "findings": len(findings),
-                            "duration_s": result["duration_s"]}) + "\n")
+                            "duration_s": result["duration_s"], "fetches": edge["fetches"], "first_failed": edge["first_failed"],
+                            "fetches_52x": edge["fetches_52x"], "recovered": len(edge["recovered"]), "edge_tripped": edge["tripped"],
+                            "first_failures": [[r["t"], r["error"] or r["status"], r["ray"], r["url"].replace(base, "") or "/"] for r in edge["failed"]]}) + "\n")
     if a.baseline:
         json.dump({"base": base, "checked_at": result["checked_at"], "findings": findings}, open(a.baseline, "w", encoding="utf-8"), indent=1)
+    for r in edge["recovered"]:
+        print("NOTE LIVE-CHECK passed only on a retry: %s (first attempt %s, ray %s, %s)" % (r["url"], r["error"] or "HTTP %s" % r["status"], r["ray"], r["t"]))
+    print("LIVE-CHECK EDGE %d of %d first attempts failed, %d fetch(es) with a 52x, %d passed only on a retry: %s"
+          % (edge["first_failed"], edge["fetches"], edge["fetches_52x"], len(edge["recovered"]), "TRIPPED" if edge["tripped"] else "under the limit"))
     for f in findings:
         print("FAIL LIVE-CHECK " + f)
     if error:

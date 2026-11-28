@@ -3,6 +3,26 @@
   "defaults": {"form": "#tool-form", "result": "#results-container", "result_timeout": 8000},
   "calculators": [
     {
+     "calculator": "ir35-contractor-calculator",
+     "path": "/calculators/ir35-contractor-calculator.php",
+     "fill": {
+      "salary": "65000",
+      "employer-pension": "5",
+      "day-rate": "500",
+      "days": "200",
+      "running-costs": "0",
+   "cs-large": true,
+      "cfr-no": true,
+      "res-ruk": true,
+      "ty-2627": true
+     },
+     "expect": [
+      "£51,507",
+      "£68,557"
+     ],
+     "source": "First principles on GOV.UK 2026/27 rUK rates. Permanent 65,000: Income Tax 37,700 x 20% + 14,730 x 40% = 13,432; employee NI 37,700 x 8% + 14,730 x 2% = 3,310.60; take-home 48,257.40 plus employer pension 5% = 3,250, total value 51,507. Inside IR35 (Chapter 10, fee-payer pays its costs on top, company running costs set to 0): deemed payment 500 x 200 = 100,000 (adjusted net income at the taper threshold, so the full 12,570 allowance); Income Tax 7,540 + 49,730 x 40% = 27,432; NI 3,016 + 49,730 x 2% = 4,010.60; take-home 68,557.40."
+    },
+    {
       "calculator": "vat-calculator",
       "path": "/calculators/vat-calculator.php",
       "fill": {"op-add": true, "rate-20": true, "amount": "100"},
@@ -69,6 +89,20 @@
       "fill": {"profit": "80000", "res-ruk": "england", "other-income": "0", "take-all": "all", "running-costs": "0", "ea-no": "no"},
       "expect": ["£57,711", "£55,765"],
       "source": "GOV.UK 2026/27 rates (Income Tax bands, self-employed NI, employer NI, Corporation Tax with marginal relief, dividend tax) by hand, for 80,000 of profit in England with no other income. Sole trader: Income Tax 37,700 x 20% + 29,730 x 40% = 19,432; Class 4 37,700 x 6% + 29,730 x 2% = 2,856.60; take-home 57,711.40. Company, all taken out, salary 12,570: employer NI 7,570 x 15% = 1,135.50; Corporation Tax on 66,294.50 = 16,573.63 - 3/200 x 183,705.50 = 13,818.04; dividends 52,476.46 taxed 37,200 x 10.75% + 14,776.46 x 35.75% = 9,281.58 after the 500 allowance; take-home 12,570 + 52,476.46 - 9,281.58 = 55,764.88."
+    },
+    {
+      "calculator": "take-home-pay-calculator",
+      "path": "/calculators/take-home-pay-calculator.php",
+      "fill": {"salary": "45000", "res-ruk": "england"},
+      "expect": ["£35,920"],
+      "source": "GOV.UK 2026/27 rates by hand: Income Tax (45,000 - 12,570) x 20% = 6,486; NI 32,430 x 8% = 2,594.40; take-home 35,919.60."
+    },
+    {
+      "calculator": "mtd-income-tax-checker",
+      "path": "/calculators/mtd-income-tax-checker.php",
+      "fill": {"se-2425": "27000", "uk-2425": "25000"},
+      "expect": ["£52,000", "6 April 2026"],
+      "source": "GOV.UK Work out your qualifying income (updated 11 September 2026): 25,000 rent + 27,000 self-employment = 52,000; GOV.UK: over 50,000 for 2024 to 2025 means from 6 April 2026."
     },
     {
       "calculator": "side-income-tax-calculator",

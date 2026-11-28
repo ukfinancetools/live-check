@@ -77,7 +77,8 @@ CANON = "https://www.ukfinancetools.co.uk"
 UA = "Mozilla/5.0 (X11; Linux x86_64) Chrome/128 ukft-indexable-check"
 # Not reader pages: includes, generators and endpoints (sitemap.php's exclude lists, blast-radius NOT_A_PAGE).
 NOT_PAGE_DIRS = frozenset({"templates", "includes", "assets", "data", "go", ".git", "node_modules"})
-NOT_PAGE_FILES = frozenset({"header.php", "footer.php", "sitemap.php", "llms.php", "search-index.php", "404.php"})
+NOT_PAGE_FILES = frozenset({"header.php", "footer.php", "sitemap.php", "llms.php", "search-index.php", "404.php",
+                            "subscribe.php"})  # I272: the newsletter form endpoint (a GET redirects home), not a page
 NOINDEX_DIRS = frozenset({"news"})  # header.php: every /news/ path is noindex,follow by decision (S24)
 PREVIEW_DIR = "sandbox"  # a -preview page is noindex by declaration only here (the sitemap drops -preview anywhere)
 DECLARED_NOINDEX = re.compile(r"\$pageNoindex\s*=\s*true\b|['\"]noindex['\"]\s*=>\s*true\b")
