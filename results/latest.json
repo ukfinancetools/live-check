@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-28T12:24:09Z",
+ "checked_at": "2026-11-28T13:16:23Z",
  "base": "https://www.ukfinancetools.co.uk",
  "mode": "live",
  "expected_urls_from": "2d52e86f",
@@ -23,133 +23,133 @@
      "path": "/calculators/ir35-contractor-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 6023
+     "ms": 7982
     },
     {
      "calculator": "vat-calculator",
      "path": "/calculators/vat-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1105
+     "ms": 1094
     },
     {
      "calculator": "dividend-tax-calculator",
      "path": "/calculators/dividend-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1059
+     "ms": 1062
     },
     {
      "calculator": "self-employed-tax-calculator",
      "path": "/calculators/self-employed-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1066
+     "ms": 885
     },
     {
      "calculator": "shares-cgt-calculator",
      "path": "/calculators/shares-cgt-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1065
+     "ms": 1088
     },
     {
      "calculator": "property-cgt-calculator",
      "path": "/calculators/property-cgt-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1063
+     "ms": 885
     },
     {
      "calculator": "iht-planner",
      "path": "/calculators/iht-planner.php",
      "ok": true,
      "problems": [],
-     "ms": 1062
+     "ms": 886
     },
     {
      "calculator": "pension-lump-sum-tax-calculator",
      "path": "/calculators/pension-lump-sum-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1069
+     "ms": 1085
     },
     {
      "calculator": "salary-dividend-calculator",
      "path": "/calculators/salary-dividend-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 861
+     "ms": 919
     },
     {
      "calculator": "sole-trader-vs-limited-company-calculator",
      "path": "/calculators/sole-trader-vs-limited-company-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1076
+     "ms": 1105
     },
     {
      "calculator": "take-home-pay-calculator",
      "path": "/calculators/take-home-pay-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1169
+     "ms": 1233
     },
     {
      "calculator": "mtd-income-tax-checker",
      "path": "/calculators/mtd-income-tax-checker.php",
      "ok": true,
      "problems": [],
-     "ms": 1056
+     "ms": 869
     },
     {
      "calculator": "side-income-tax-calculator",
      "path": "/calculators/side-income-tax-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1064
+     "ms": 882
     },
     {
      "calculator": "state-pension-topup-calculator",
      "path": "/calculators/state-pension-topup-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1063
+     "ms": 863
     },
     {
      "calculator": "tapered-annual-allowance-calculator",
      "path": "/calculators/tapered-annual-allowance-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1059
+     "ms": 865
     },
     {
      "calculator": "capital-gains-tax-scotland-calculator",
      "path": "/calculators/capital-gains-tax-scotland-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1060
+     "ms": 867
     },
     {
      "calculator": "fire-calculator",
      "path": "/calculators/fire-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 1061
+     "ms": 1082
     },
     {
      "calculator": "safe-withdrawal-rate-calculator",
      "path": "/calculators/safe-withdrawal-rate-calculator.php",
      "ok": true,
      "problems": [],
-     "ms": 5999
+     "ms": 8569
     },
     {
      "calculator": "real-cost-of-living",
      "path": "/calculators/real-cost-of-living.php",
      "ok": true,
      "problems": [],
-     "ms": 1555
+     "ms": 2075
     }
    ]
   }
@@ -168,935 +168,935 @@
   "recovered_on_retry": [],
   "first_attempts": [
    {
-    "t": "2026-11-28T12:24:09.095Z",
-    "ms": 301,
+    "t": "2026-11-28T13:16:23.823Z",
+    "ms": 340,
     "status": 200,
-    "ray": "a61959112c0ac05f-IAD",
+    "ray": "a619a5994b3b531f-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/sitemap.xml"
    },
    {
-    "t": "2026-11-28T12:24:09.401Z",
-    "ms": 246,
+    "t": "2026-11-28T13:16:24.171Z",
+    "ms": 203,
     "status": 200,
-    "ray": "a6195912da012c1f-IAD",
+    "ray": "a619a59b3af0f2f7-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/robots.txt"
    },
    {
-    "t": "2026-11-28T12:24:09.646Z",
-    "ms": 112,
+    "t": "2026-11-28T13:16:24.374Z",
+    "ms": 278,
     "status": 200,
-    "ray": "a61959145ac84b25-IAD",
+    "ray": "a619a59c7afa1f53-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/sitemap.xml"
    },
    {
-    "t": "2026-11-28T12:24:09.759Z",
-    "ms": 429,
+    "t": "2026-11-28T13:16:24.653Z",
+    "ms": 322,
     "status": 200,
-    "ray": "a61959152b6fe8aa-IAD",
+    "ray": "a619a59e3a7073b3-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/about.php"
    },
    {
-    "t": "2026-11-28T12:24:10.191Z",
-    "ms": 392,
+    "t": "2026-11-28T13:16:24.980Z",
+    "ms": 347,
     "status": 200,
-    "ray": "a6195917cd27cb57-IAD",
+    "ray": "a619a5a03b38cb66-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/affiliate-policy.php"
    },
    {
-    "t": "2026-11-28T12:24:10.586Z",
-    "ms": 371,
+    "t": "2026-11-28T13:16:25.331Z",
+    "ms": 374,
     "status": 200,
-    "ray": "a619591a4d58ad11-IAD",
+    "ray": "a619a5a26dec57bf-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/contact.php"
    },
    {
-    "t": "2026-11-28T12:24:10.959Z",
-    "ms": 370,
+    "t": "2026-11-28T13:16:25.710Z",
+    "ms": 294,
     "status": 200,
-    "ray": "a619591c9c6c9c25-IAD",
+    "ray": "a619a5a4cd3f22df-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/disclaimer.php"
    },
    {
-    "t": "2026-11-28T12:24:11.331Z",
-    "ms": 366,
+    "t": "2026-11-28T13:16:26.008Z",
+    "ms": 444,
     "status": 200,
-    "ray": "a619591ee8dd98bb-IAD",
+    "ray": "a619a5a6acacba1e-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/glossary.php"
    },
    {
-    "t": "2026-11-28T12:24:11.702Z",
-    "ms": 360,
+    "t": "2026-11-28T13:16:26.459Z",
+    "ms": 364,
     "status": 200,
-    "ray": "a61959213c91bdb0-IAD",
+    "ray": "a619a5a978e6ec74-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/how-we-check-our-figures.php"
    },
    {
-    "t": "2026-11-28T12:24:12.065Z",
-    "ms": 385,
+    "t": "2026-11-28T13:16:26.828Z",
+    "ms": 35,
     "status": 200,
-    "ray": "a61959237bc22c61-IAD",
+    "ray": "a619a5abc8074a7e-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/"
    },
    {
-    "t": "2026-11-28T12:24:12.455Z",
-    "ms": 370,
+    "t": "2026-11-28T13:16:26.869Z",
+    "ms": 208,
     "status": 200,
-    "ray": "a6195925eb23e3c6-IAD",
+    "ray": "a619a5ac093b5191-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/partners.php"
    },
    {
-    "t": "2026-11-28T12:24:12.827Z",
-    "ms": 382,
+    "t": "2026-11-28T13:16:27.082Z",
+    "ms": 345,
     "status": 200,
-    "ray": "a61959283a6c2539-IAD",
+    "ray": "a619a5ad6ea1f2c9-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/privacy.php"
    },
    {
-    "t": "2026-11-28T12:24:13.212Z",
-    "ms": 382,
+    "t": "2026-11-28T13:16:27.431Z",
+    "ms": 298,
     "status": 200,
-    "ray": "a619592aad53f9b9-IAD",
+    "ray": "a619a5af88baf6a0-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/capital-gains-tax-scotland-calculator.php"
    },
    {
-    "t": "2026-11-28T12:24:13.598Z",
-    "ms": 374,
+    "t": "2026-11-28T13:16:27.735Z",
+    "ms": 355,
     "status": 200,
-    "ray": "a619592d0f9fbe47-IAD",
+    "ray": "a619a5b17b679917-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/dividend-tax-calculator.php"
    },
    {
-    "t": "2026-11-28T12:24:13.975Z",
-    "ms": 371,
+    "t": "2026-11-28T13:16:28.095Z",
+    "ms": 345,
     "status": 200,
-    "ray": "a619592f6dbe2b43-IAD",
+    "ray": "a619a5b3bda3c415-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/fire-calculator.php"
    },
    {
-    "t": "2026-11-28T12:24:14.350Z",
-    "ms": 382,
+    "t": "2026-11-28T13:16:28.446Z",
+    "ms": 291,
     "status": 200,
-    "ray": "a6195931bafd7c80-IAD",
+    "ray": "a619a5b5ee502321-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/iht-planner.php"
    },
    {
-    "t": "2026-11-28T12:24:14.735Z",
-    "ms": 382,
+    "t": "2026-11-28T13:16:28.742Z",
+    "ms": 351,
     "status": 200,
-    "ray": "a61959342b296147-IAD",
+    "ray": "a619a5b7c84888f9-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/"
    },
    {
-    "t": "2026-11-28T12:24:15.120Z",
-    "ms": 361,
+    "t": "2026-11-28T13:16:29.099Z",
+    "ms": 307,
     "status": 200,
-    "ray": "a61959368eeed65d-IAD",
+    "ray": "a619a5b9ff7b274e-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/ir35-contractor-calculator.php"
    },
    {
-    "t": "2026-11-28T12:24:15.484Z",
-    "ms": 370,
+    "t": "2026-11-28T13:16:29.411Z",
+    "ms": 297,
     "status": 200,
-    "ray": "a6195938dc401fec-IAD",
+    "ray": "a619a5bbfa4c92d9-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/mtd-income-tax-checker.php"
    },
    {
-    "t": "2026-11-28T12:24:15.858Z",
-    "ms": 379,
+    "t": "2026-11-28T13:16:29.714Z",
+    "ms": 327,
     "status": 200,
-    "ray": "a619593b2abff83a-IAD",
+    "ray": "a619a5bddb77af88-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/pension-drawdown-backtester.php"
    },
    {
-    "t": "2026-11-28T12:24:16.242Z",
-    "ms": 370,
+    "t": "2026-11-28T13:16:30.049Z",
+    "ms": 57,
     "status": 200,
-    "ray": "a619593d9959db63-IAD",
+    "ray": "a619a5bfeb80570b-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/pension-lump-sum-tax-calculator.php"
    },
    {
-    "t": "2026-11-28T12:24:16.616Z",
-    "ms": 394,
+    "t": "2026-11-28T13:16:30.113Z",
+    "ms": 352,
     "status": 200,
-    "ray": "a619593fefff2040-IAD",
+    "ray": "a619a5c05d0720bc-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/property-cgt-calculator.php"
    },
    {
-    "t": "2026-11-28T12:24:17.014Z",
-    "ms": 497,
+    "t": "2026-11-28T13:16:30.471Z",
+    "ms": 43,
     "status": 200,
-    "ray": "a619594269920631-IAD",
+    "ray": "a619a5c29a5e274e-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/real-cost-of-living.php"
    },
    {
-    "t": "2026-11-28T12:24:17.516Z",
-    "ms": 404,
+    "t": "2026-11-28T13:16:30.522Z",
+    "ms": 403,
     "status": 200,
-    "ray": "a61959458ebc3c2f-IAD",
+    "ray": "a619a5c2ebb1531f-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/safe-withdrawal-rate-calculator.php"
    },
    {
-    "t": "2026-11-28T12:24:17.924Z",
-    "ms": 554,
+    "t": "2026-11-28T13:16:30.933Z",
+    "ms": 352,
     "status": 200,
-    "ray": "a61959481939e5e9-IAD",
+    "ray": "a619a5c578705719-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/salary-dividend-calculator.php"
    },
    {
-    "t": "2026-11-28T12:24:18.483Z",
-    "ms": 369,
+    "t": "2026-11-28T13:16:31.292Z",
+    "ms": 302,
     "status": 200,
-    "ray": "a619594b9d912fd0-IAD",
+    "ray": "a619a5c7bcad0a5e-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/self-employed-tax-calculator.php"
    },
    {
-    "t": "2026-11-28T12:24:18.857Z",
-    "ms": 395,
+    "t": "2026-11-28T13:16:31.600Z",
+    "ms": 354,
     "status": 200,
-    "ray": "a619594def10172f-IAD",
+    "ray": "a619a5c99a301f53-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/shares-cgt-calculator.php"
    },
    {
-    "t": "2026-11-28T12:24:19.257Z",
-    "ms": 386,
+    "t": "2026-11-28T13:16:31.961Z",
+    "ms": 299,
     "status": 200,
-    "ray": "a61959506f757040-IAD",
+    "ray": "a619a5cbdc7ecb66-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/side-income-tax-calculator.php"
    },
    {
-    "t": "2026-11-28T12:24:19.648Z",
-    "ms": 376,
+    "t": "2026-11-28T13:16:32.267Z",
+    "ms": 324,
     "status": 200,
-    "ray": "a6195952dff00556-IAD",
+    "ray": "a619a5cdcb1aad8d-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/sole-trader-vs-limited-company-calculator.php"
    },
    {
-    "t": "2026-11-28T12:24:20.028Z",
-    "ms": 384,
+    "t": "2026-11-28T13:16:32.596Z",
+    "ms": 307,
     "status": 200,
-    "ray": "a61959553c8a9a8e-IAD",
+    "ray": "a619a5cfdf217555-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/state-pension-topup-calculator.php"
    },
    {
-    "t": "2026-11-28T12:24:20.416Z",
-    "ms": 369,
+    "t": "2026-11-28T13:16:32.909Z",
+    "ms": 309,
     "status": 200,
-    "ray": "a6195957ab9f8c97-IAD",
+    "ray": "a619a5d1ca8357bf-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/take-home-pay-calculator.php"
    },
    {
-    "t": "2026-11-28T12:24:20.788Z",
-    "ms": 371,
+    "t": "2026-11-28T13:16:33.223Z",
+    "ms": 353,
     "status": 200,
-    "ray": "a6195959fa44216d-IAD",
+    "ray": "a619a5d3c8cfba1e-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/tapered-annual-allowance-calculator.php"
    },
    {
-    "t": "2026-11-28T12:24:21.163Z",
-    "ms": 375,
+    "t": "2026-11-28T13:16:33.583Z",
+    "ms": 325,
     "status": 200,
-    "ray": "a619595c5b705187-IAD",
+    "ray": "a619a5d60a65a2d2-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/calculators/vat-calculator.php"
    },
    {
-    "t": "2026-11-28T12:24:21.542Z",
-    "ms": 384,
+    "t": "2026-11-28T13:16:33.914Z",
+    "ms": 352,
     "status": 200,
-    "ray": "a619595ebe218896-IAD",
+    "ray": "a619a5d81e1373b3-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/60-percent-tax-trap.php"
    },
    {
-    "t": "2026-11-28T12:24:21.931Z",
-    "ms": 376,
+    "t": "2026-11-28T13:16:34.273Z",
+    "ms": 365,
     "status": 200,
-    "ray": "a61959612ed82449-IAD",
+    "ray": "a619a5da5ba122df-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/allowable-expenses.php"
    },
    {
-    "t": "2026-11-28T12:24:22.312Z",
-    "ms": 394,
+    "t": "2026-11-28T13:16:34.645Z",
+    "ms": 362,
     "status": 200,
-    "ray": "a61959638d706c63-IAD",
+    "ray": "a619a5dcaad7ffc3-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/bed-and-isa.php"
    },
    {
-    "t": "2026-11-28T12:24:22.709Z",
-    "ms": 404,
+    "t": "2026-11-28T13:16:35.011Z",
+    "ms": 290,
     "status": 200,
-    "ray": "a61959660e17a568-IAD",
+    "ray": "a619a5dee840f2c9-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/bed-and-spouse.php"
    },
    {
-    "t": "2026-11-28T12:24:23.116Z",
-    "ms": 398,
+    "t": "2026-11-28T13:16:35.306Z",
+    "ms": 361,
     "status": 200,
-    "ray": "a61959688d049b36-IAD",
+    "ray": "a619a5e0cd7ac415-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/calculate-your-personal-inflation-rate.php"
    },
    {
-    "t": "2026-11-28T12:24:23.516Z",
-    "ms": 352,
+    "t": "2026-11-28T13:16:35.673Z",
+    "ms": 62,
     "status": 200,
-    "ray": "a619596b0f5dcf61-IAD",
+    "ray": "a619a5e31d6dba42-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/capital-gains-tax-shares.php"
    },
    {
-    "t": "2026-11-28T12:24:23.872Z",
-    "ms": 389,
+    "t": "2026-11-28T13:16:35.741Z",
+    "ms": 356,
     "status": 200,
-    "ray": "a619596d49d78b8e-IAD",
+    "ray": "a619a5e37dc3f2f7-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/coast-fire.php"
    },
    {
-    "t": "2026-11-28T12:24:24.265Z",
-    "ms": 348,
+    "t": "2026-11-28T13:16:36.103Z",
+    "ms": 310,
     "status": 200,
-    "ray": "a619596fb93f3929-IAD",
+    "ray": "a619a5e5ca549917-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/compound-interest.php"
    },
    {
-    "t": "2026-11-28T12:24:24.618Z",
-    "ms": 444,
+    "t": "2026-11-28T13:16:36.420Z",
+    "ms": 334,
     "status": 200,
-    "ray": "a6195971eb115aec-IAD",
+    "ray": "a619a5e7cc92eb93-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/director-salary-dividend-strategy.php"
    },
    {
-    "t": "2026-11-28T12:24:25.067Z",
-    "ms": 376,
+    "t": "2026-11-28T13:16:36.762Z",
+    "ms": 297,
     "status": 200,
-    "ray": "a6195974b969ccf6-IAD",
+    "ray": "a619a5e9da87ec74-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/electric-car-through-limited-company.php"
    },
    {
-    "t": "2026-11-28T12:24:25.446Z",
-    "ms": 392,
+    "t": "2026-11-28T13:16:37.066Z",
+    "ms": 327,
     "status": 200,
-    "ray": "a61959771f23d6d3-IAD",
+    "ray": "a619a5ebcc62a237-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/employed-and-self-employed.php"
    },
    {
-    "t": "2026-11-28T12:24:25.842Z",
-    "ms": 422,
+    "t": "2026-11-28T13:16:37.399Z",
+    "ms": 292,
     "status": 200,
-    "ray": "a61959799d6fe644-IAD",
+    "ray": "a619a5eddc334a7e-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/employee-share-scheme-tax.php"
    },
    {
-    "t": "2026-11-28T12:24:26.268Z",
-    "ms": 369,
+    "t": "2026-11-28T13:16:37.697Z",
+    "ms": 348,
     "status": 200,
-    "ray": "a619597c3d9dd631-IAD",
+    "ray": "a619a5efbcff5191-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/flat-rate-scheme-limited-cost-trader.php"
    },
    {
-    "t": "2026-11-28T12:24:26.641Z",
-    "ms": 414,
+    "t": "2026-11-28T13:16:38.052Z",
+    "ms": 313,
     "status": 200,
-    "ray": "a619597e99b4d638-IAD",
+    "ray": "a619a5f1ecb41f53-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/has-my-pay-kept-up-with-inflation.php"
    },
    {
-    "t": "2026-11-28T12:24:27.058Z",
-    "ms": 392,
+    "t": "2026-11-28T13:16:38.371Z",
+    "ms": 351,
     "status": 200,
-    "ray": "a61959813c9a6392-IAD",
+    "ray": "a619a5f3ebd2531f-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/how-is-dividend-tax-calculated.php"
    },
    {
-    "t": "2026-11-28T12:24:27.453Z",
-    "ms": 372,
+    "t": "2026-11-28T13:16:38.728Z",
+    "ms": 351,
     "status": 200,
-    "ray": "a6195983afd505d7-IAD",
+    "ray": "a619a5f62f83274e-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/how-long-will-my-pension-pot-last.php"
    },
    {
-    "t": "2026-11-28T12:24:27.829Z",
-    "ms": 396,
+    "t": "2026-11-28T13:16:39.084Z",
+    "ms": 292,
     "status": 200,
-    "ray": "a61959860f8f1ffa-IAD",
+    "ray": "a619a5f86c605719-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/how-to-calculate-cgt-on-property.php"
    },
    {
-    "t": "2026-11-28T12:24:28.228Z",
-    "ms": 388,
+    "t": "2026-11-28T13:16:39.383Z",
+    "ms": 357,
     "status": 200,
-    "ray": "a61959888892094f-IAD",
+    "ray": "a619a5fa4cd488f9-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/how-to-calculate-cgt-on-shares.php"
    },
    {
-    "t": "2026-11-28T12:24:28.620Z",
-    "ms": 366,
+    "t": "2026-11-28T13:16:39.746Z",
+    "ms": 376,
     "status": 200,
-    "ray": "a619598af9a5c57f-IAD",
+    "ray": "a619a5fc8ba7ba1e-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/iht-pension-raid.php"
    },
    {
-    "t": "2026-11-28T12:24:28.990Z",
-    "ms": 395,
+    "t": "2026-11-28T13:16:40.127Z",
+    "ms": 361,
     "status": 200,
-    "ray": "a619598d48ddc3b9-IAD",
+    "ray": "a619a5feec9b2321-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/iht-seven-year-rule.php"
    },
    {
-    "t": "2026-11-28T12:24:29.388Z",
-    "ms": 414,
+    "t": "2026-11-28T13:16:40.495Z",
+    "ms": 386,
     "status": 200,
-    "ray": "a619598fcc29392b-IAD",
+    "ray": "a619a601384cf6a0-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/"
    },
    {
-    "t": "2026-11-28T12:24:29.807Z",
-    "ms": 374,
+    "t": "2026-11-28T13:16:40.889Z",
+    "ms": 324,
     "status": 200,
-    "ray": "a61959926eea05e4-IAD",
+    "ray": "a619a603ab1b570b-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/inheritance-tax-taper-relief.php"
    },
    {
-    "t": "2026-11-28T12:24:30.184Z",
-    "ms": 386,
+    "t": "2026-11-28T13:16:41.220Z",
+    "ms": 360,
     "status": 200,
-    "ray": "a6195994be48c967-IAD",
+    "ray": "a619a605b99a92d9-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/inside-vs-outside-ir35.php"
    },
    {
-    "t": "2026-11-28T12:24:30.573Z",
-    "ms": 370,
+    "t": "2026-11-28T13:16:41.585Z",
+    "ms": 350,
     "status": 200,
-    "ray": "a61959972b165eff-IAD",
+    "ray": "a619a6080847ad8d-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/making-tax-digital-income-tax.php"
    },
    {
-    "t": "2026-11-28T12:24:30.948Z",
-    "ms": 402,
+    "t": "2026-11-28T13:16:41.943Z",
+    "ms": 394,
     "status": 200,
-    "ray": "a61959997956d64c-IAD",
+    "ray": "a619a60a4bae57bf-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/marginal-tax-rates-uk.php"
    },
    {
-    "t": "2026-11-28T12:24:31.354Z",
-    "ms": 445,
+    "t": "2026-11-28T13:16:42.344Z",
+    "ms": 334,
     "status": 200,
-    "ray": "a619599c0db791fa-IAD",
+    "ray": "a619a60cce9cc568-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/pension-annual-allowance.php"
    },
    {
-    "t": "2026-11-28T12:24:31.804Z",
-    "ms": 374,
+    "t": "2026-11-28T13:16:42.686Z",
+    "ms": 292,
     "status": 200,
-    "ray": "a619599ed9ffc58b-IAD",
+    "ray": "a619a60ee8dacb66-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/pension-emergency-tax.php"
    },
    {
-    "t": "2026-11-28T12:24:32.182Z",
-    "ms": 370,
+    "t": "2026-11-28T13:16:42.984Z",
+    "ms": 299,
     "status": 200,
-    "ray": "a61959a13effc932-IAD",
+    "ray": "a619a610ceb373b3-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/pension-lump-sum-tax.php"
    },
    {
-    "t": "2026-11-28T12:24:32.556Z",
-    "ms": 343,
+    "t": "2026-11-28T13:16:43.289Z",
+    "ms": 383,
     "status": 200,
-    "ray": "a61959a38f6a6d9e-IAD",
+    "ray": "a619a612aeb9ec74-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/private-residence-relief.php"
    },
    {
-    "t": "2026-11-28T12:24:32.902Z",
-    "ms": 361,
+    "t": "2026-11-28T13:16:43.678Z",
+    "ms": 348,
     "status": 200,
-    "ray": "a61959a5bb8510de-IAD",
+    "ray": "a619a6151c6922df-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/property-cgt-reporting.php"
    },
    {
-    "t": "2026-11-28T12:24:33.266Z",
-    "ms": 381,
+    "t": "2026-11-28T13:16:44.033Z",
+    "ms": 357,
     "status": 200,
-    "ray": "a61959a7fac31f89-IAD",
+    "ray": "a619a6175d807555-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/retiring-before-57.php"
    },
    {
-    "t": "2026-11-28T12:24:33.651Z",
-    "ms": 417,
+    "t": "2026-11-28T13:16:44.400Z",
+    "ms": 340,
     "status": 200,
-    "ray": "a61959aa6ee8c948-IAD",
+    "ray": "a619a61998e8f2f7-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/self-assessment-tax-bill.php"
    },
    {
-    "t": "2026-11-28T12:24:34.072Z",
-    "ms": 365,
+    "t": "2026-11-28T13:16:44.746Z",
+    "ms": 327,
     "status": 200,
-    "ray": "a61959ad08bc3928-IAD",
+    "ray": "a619a61bca0eeb93-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/self-employed-tax-pot-savings-interest.php"
    },
    {
-    "t": "2026-11-28T12:24:34.440Z",
-    "ms": 376,
+    "t": "2026-11-28T13:16:45.079Z",
+    "ms": 333,
     "status": 200,
-    "ray": "a61959af5da09c19-IAD",
+    "ray": "a619a61ddea79917-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/shares-bed-and-breakfast-rule.php"
    },
    {
-    "t": "2026-11-28T12:24:34.819Z",
-    "ms": 387,
+    "t": "2026-11-28T13:16:45.417Z",
+    "ms": 289,
     "status": 200,
-    "ray": "a61959b1afbdd61c-IAD",
+    "ray": "a619a61ffb964a7e-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/sole-trader-vs-ltd.php"
    },
    {
-    "t": "2026-11-28T12:24:35.210Z",
-    "ms": 399,
+    "t": "2026-11-28T13:16:45.713Z",
+    "ms": 347,
     "status": 200,
-    "ray": "a61959b41c3067e0-IAD",
+    "ray": "a619a621db96a2d2-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/state-pension-voluntary-ni-contributions.php"
    },
    {
-    "t": "2026-11-28T12:24:35.613Z",
-    "ms": 465,
+    "t": "2026-11-28T13:16:46.066Z",
+    "ms": 336,
     "status": 200,
-    "ray": "a61959b6ad4b5f67-IAD",
+    "ray": "a619a6240bcd274e-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/tapered-annual-allowance-charge.php"
    },
    {
-    "t": "2026-11-28T12:24:36.082Z",
-    "ms": 401,
+    "t": "2026-11-28T13:16:46.407Z",
+    "ms": 303,
     "status": 200,
-    "ray": "a61959b99d9c4ae3-IAD",
+    "ray": "a619a62629cc1f53-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/trading-allowance-side-income.php"
    },
    {
-    "t": "2026-11-28T12:24:36.487Z",
-    "ms": 443,
+    "t": "2026-11-28T13:16:46.716Z",
+    "ms": 348,
     "status": 200,
-    "ray": "a61959bc1cb1c10e-IAD",
+    "ray": "a619a62818195719-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/vat-reclaim-before-registration.php"
    },
    {
-    "t": "2026-11-28T12:24:36.934Z",
-    "ms": 401,
+    "t": "2026-11-28T13:16:47.070Z",
+    "ms": 353,
     "status": 200,
-    "ray": "a61959beecc6fc40-IAD",
+    "ray": "a619a62a48adba1e-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/vat-registration-trap.php"
    },
    {
-    "t": "2026-11-28T12:24:37.338Z",
-    "ms": 408,
+    "t": "2026-11-28T13:16:47.428Z",
+    "ms": 345,
     "status": 200,
-    "ray": "a61959c16b8eb25d-IAD",
+    "ray": "a619a62c8abf5191-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/guides/why-is-my-cost-of-living-higher-than-inflation.php"
    },
    {
-    "t": "2026-11-28T12:24:37.749Z",
-    "ms": 357,
+    "t": "2026-11-28T13:16:47.778Z",
+    "ms": 392,
     "status": 200,
-    "ray": "a61959c40a870434-IAD",
+    "ray": "a619a62ebd84531f-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/autumn-budget-2025.php"
    },
    {
-    "t": "2026-11-28T12:24:38.109Z",
-    "ms": 382,
+    "t": "2026-11-28T13:16:48.175Z",
+    "ms": 301,
     "status": 200,
-    "ray": "a61959c63937150b-IAD",
+    "ray": "a619a6313d4bf6a0-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/dividend-tax-hike-april-2026.php"
    },
    {
-    "t": "2026-11-28T12:24:38.495Z",
-    "ms": 364,
+    "t": "2026-11-28T13:16:48.481Z",
+    "ms": 307,
     "status": 200,
-    "ray": "a61959c8aab708ad-IAD",
+    "ray": "a619a6331ff2af88-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/"
    },
    {
-    "t": "2026-11-28T12:24:38.862Z",
-    "ms": 378,
+    "t": "2026-11-28T13:16:48.793Z",
+    "ms": 341,
     "status": 200,
-    "ray": "a61959cafa4228c8-IAD",
+    "ray": "a619a6351c3c274e-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/scottish-budget-2026-27.php"
    },
    {
-    "t": "2026-11-28T12:24:39.242Z",
-    "ms": 378,
+    "t": "2026-11-28T13:16:49.138Z",
+    "ms": 301,
     "status": 200,
-    "ray": "a61959cd5ec5c6ef-IAD",
+    "ray": "a619a6373c92ad8d-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-03-28.php"
    },
    {
-    "t": "2026-11-28T12:24:39.623Z",
-    "ms": 380,
+    "t": "2026-11-28T13:16:49.443Z",
+    "ms": 372,
     "status": 200,
-    "ray": "a61959cfbcac38c9-IAD",
+    "ray": "a619a6392b455c0c-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-04-03.php"
    },
    {
-    "t": "2026-11-28T12:24:40.006Z",
-    "ms": 387,
+    "t": "2026-11-28T13:16:49.819Z",
+    "ms": 311,
     "status": 200,
-    "ray": "a61959d21987a727-IAD",
+    "ray": "a619a63b7f2acb66-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-04-10.php"
    },
    {
-    "t": "2026-11-28T12:24:40.395Z",
-    "ms": 377,
+    "t": "2026-11-28T13:16:50.134Z",
+    "ms": 347,
     "status": 200,
-    "ray": "a61959d48a670578-IAD",
+    "ray": "a619a63d798f22df-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-04-17.php"
    },
    {
-    "t": "2026-11-28T12:24:40.775Z",
-    "ms": 377,
+    "t": "2026-11-28T13:16:50.485Z",
+    "ms": 344,
     "status": 200,
-    "ray": "a61959d6ec8df27c-IAD",
+    "ray": "a619a63fab8d57bf-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-04-24.php"
    },
    {
-    "t": "2026-11-28T12:24:41.154Z",
-    "ms": 405,
+    "t": "2026-11-28T13:16:50.833Z",
+    "ms": 289,
     "status": 200,
-    "ray": "a61959d94b9905ef-IAD",
+    "ray": "a619a641dc5bf2f7-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-05-01.php"
    },
    {
-    "t": "2026-11-28T12:24:41.562Z",
-    "ms": 357,
+    "t": "2026-11-28T13:16:51.126Z",
+    "ms": 353,
     "status": 200,
-    "ray": "a61959dbda27e5fc-IAD",
+    "ray": "a619a643aa2eec74-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-05-08.php"
    },
    {
-    "t": "2026-11-28T12:24:41.922Z",
-    "ms": 368,
+    "t": "2026-11-28T13:16:51.484Z",
+    "ms": 496,
     "status": 200,
-    "ray": "a61959de1af7b506-IAD",
+    "ray": "a619a645ef8973b3-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-05-15.php"
    },
    {
-    "t": "2026-11-28T12:24:42.293Z",
-    "ms": 362,
+    "t": "2026-11-28T13:16:51.984Z",
+    "ms": 293,
     "status": 200,
-    "ray": "a61959e06ef7f3c2-IAD",
+    "ray": "a619a6490a0e4a7e-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-05-22.php"
    },
    {
-    "t": "2026-11-28T12:24:42.657Z",
-    "ms": 364,
+    "t": "2026-11-28T13:16:52.281Z",
+    "ms": 296,
     "status": 200,
-    "ray": "a61959e2ae53d64c-IAD",
+    "ray": "a619a64adeccf2c9-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-05-29.php"
    },
    {
-    "t": "2026-11-28T12:24:43.023Z",
-    "ms": 395,
+    "t": "2026-11-28T13:16:52.582Z",
+    "ms": 298,
     "status": 200,
-    "ray": "a61959e4fc332978-IAD",
+    "ray": "a619a64cba4fc568-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-06-05.php"
    },
    {
-    "t": "2026-11-28T12:24:43.421Z",
-    "ms": 394,
+    "t": "2026-11-28T13:16:52.884Z",
+    "ms": 389,
     "status": 200,
-    "ray": "a61959e779ac8080-IAD",
+    "ray": "a619a64ea9a692d9-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-06-12.php"
    },
    {
-    "t": "2026-11-28T12:24:43.817Z",
-    "ms": 400,
+    "t": "2026-11-28T13:16:53.277Z",
+    "ms": 306,
     "status": 200,
-    "ray": "a61959e9eb2e1e0d-IAD",
+    "ray": "a619a6511c7c9917-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-06-19.php"
    },
    {
-    "t": "2026-11-28T12:24:44.219Z",
-    "ms": 623,
+    "t": "2026-11-28T13:16:53.587Z",
+    "ms": 315,
     "status": 200,
-    "ray": "a61959ec7e26073f-IAD",
+    "ray": "a619a6530947c415-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-06-26.php"
    },
    {
-    "t": "2026-11-28T12:24:44.845Z",
-    "ms": 387,
+    "t": "2026-11-28T13:16:53.907Z",
+    "ms": 351,
     "status": 200,
-    "ray": "a61959f05cb63ea6-IAD",
+    "ray": "a619a6550973274e-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-07-03.php"
    },
    {
-    "t": "2026-11-28T12:24:45.235Z",
-    "ms": 364,
+    "t": "2026-11-28T13:16:54.261Z",
+    "ms": 308,
     "status": 200,
-    "ray": "a61959f2cfeffe57-IAD",
+    "ray": "a619a657384e1f53-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-07-10.php"
    },
    {
-    "t": "2026-11-28T12:24:45.601Z",
-    "ms": 390,
+    "t": "2026-11-28T13:16:54.574Z",
+    "ms": 306,
     "status": 200,
-    "ray": "a61959f51a77b849-IAD",
+    "ray": "a619a6593d2cc74a-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-07-17.php"
    },
    {
-    "t": "2026-11-28T12:24:45.994Z",
-    "ms": 360,
+    "t": "2026-11-28T13:16:54.883Z",
+    "ms": 294,
     "status": 200,
-    "ray": "a61959f78e22c09f-IAD",
+    "ray": "a619a65b2a43eb39-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-07-24.php"
    },
    {
-    "t": "2026-11-28T12:24:46.356Z",
-    "ms": 355,
+    "t": "2026-11-28T13:16:55.181Z",
+    "ms": 342,
     "status": 200,
-    "ray": "a61959f9ccfe1729-IAD",
+    "ray": "a619a65cf9ad2321-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-07-31.php"
    },
    {
-    "t": "2026-11-28T12:24:46.714Z",
-    "ms": 354,
+    "t": "2026-11-28T13:16:55.528Z",
+    "ms": 335,
     "status": 200,
-    "ray": "a61959fc097e5f0a-IAD",
+    "ray": "a619a65f2cf6f6a0-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-08-07.php"
    },
    {
-    "t": "2026-11-28T12:24:47.070Z",
-    "ms": 371,
+    "t": "2026-11-28T13:16:55.867Z",
+    "ms": 298,
     "status": 200,
-    "ray": "a61959fe4d07c850-IAD",
+    "ray": "a619a6614cf0af88-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-08-14.php"
    },
    {
-    "t": "2026-11-28T12:24:47.444Z",
-    "ms": 371,
+    "t": "2026-11-28T13:16:56.169Z",
+    "ms": 523,
     "status": 200,
-    "ray": "a6195a009d0b05a0-IAD",
+    "ray": "a619a6632c745c0c-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-08-21.php"
    },
    {
-    "t": "2026-11-28T12:24:47.818Z",
-    "ms": 367,
+    "t": "2026-11-28T13:16:56.697Z",
+    "ms": 349,
     "status": 200,
-    "ray": "a6195a02e82bad11-IAD",
+    "ray": "a619a6667b02ba1e-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-08-28.php"
    },
    {
-    "t": "2026-11-28T12:24:48.188Z",
-    "ms": 357,
+    "t": "2026-11-28T13:16:57.050Z",
+    "ms": 292,
     "status": 200,
-    "ray": "a6195a053b07d6c1-IAD",
+    "ray": "a619a668acbd5191-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-09-04.php"
    },
    {
-    "t": "2026-11-28T12:24:48.547Z",
-    "ms": 357,
+    "t": "2026-11-28T13:16:57.346Z",
+    "ms": 341,
     "status": 200,
-    "ray": "a6195a077e121eec-IAD",
+    "ray": "a619a66a8bd2531f-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-09-11.php"
    },
    {
-    "t": "2026-11-28T12:24:48.906Z",
-    "ms": 375,
+    "t": "2026-11-28T13:16:57.691Z",
+    "ms": 293,
     "status": 200,
-    "ray": "a6195a09c8a22a6c-IAD",
+    "ray": "a619a66cac0e274e-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-09-18.php"
    },
    {
-    "t": "2026-11-28T12:24:49.284Z",
-    "ms": 367,
+    "t": "2026-11-28T13:16:57.987Z",
+    "ms": 292,
     "status": 200,
-    "ray": "a6195a0c185e389e-IAD",
+    "ray": "a619a66e898973b3-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-09-25.php"
    },
    {
-    "t": "2026-11-28T12:24:49.654Z",
-    "ms": 365,
+    "t": "2026-11-28T13:16:58.283Z",
+    "ms": 329,
     "status": 200,
-    "ray": "a6195a0e6e3056c8-IAD",
+    "ray": "a619a67068e15719-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-10-02.php"
    },
    {
-    "t": "2026-11-28T12:24:50.021Z",
-    "ms": 374,
+    "t": "2026-11-28T13:16:58.616Z",
+    "ms": 332,
     "status": 200,
-    "ray": "a6195a10b9c6ccb0-IAD",
+    "ray": "a619a6727fe4ec74-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-10-09.php"
    },
    {
-    "t": "2026-11-28T12:24:50.398Z",
-    "ms": 350,
+    "t": "2026-11-28T13:16:58.952Z",
+    "ms": 351,
     "status": 200,
-    "ray": "a6195a130b0cca32-IAD",
+    "ray": "a619a6748dbcad8d-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-10-16.php"
    },
    {
-    "t": "2026-11-28T12:24:50.751Z",
-    "ms": 386,
+    "t": "2026-11-28T13:16:59.308Z",
+    "ms": 330,
     "status": 200,
-    "ray": "a6195a154a95369b-IAD",
+    "ray": "a619a676c8b34a7e-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-10-23.php"
    },
    {
-    "t": "2026-11-28T12:24:51.140Z",
-    "ms": 358,
+    "t": "2026-11-28T13:16:59.643Z",
+    "ms": 353,
     "status": 200,
-    "ray": "a6195a17bc5905e0-IAD",
+    "ray": "a619a678e92722df-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-10-30.php"
    },
    {
-    "t": "2026-11-28T12:24:51.501Z",
-    "ms": 370,
+    "t": "2026-11-28T13:17:00.000Z",
+    "ms": 377,
     "status": 200,
-    "ray": "a6195a19fec82806-IAD",
+    "ray": "a619a67b1ff3f2c9-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-11-06.php"
    },
    {
-    "t": "2026-11-28T12:24:51.874Z",
-    "ms": 385,
+    "t": "2026-11-28T13:17:00.382Z",
+    "ms": 309,
     "status": 200,
-    "ray": "a6195a1c4fc128c2-IAD",
+    "ray": "a619a67d7f5992d9-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-11-13.php"
    },
    {
-    "t": "2026-11-28T12:24:52.262Z",
-    "ms": 377,
+    "t": "2026-11-28T13:17:00.696Z",
+    "ms": 302,
     "status": 200,
-    "ray": "a6195a1eb8ea0020-IAD",
+    "ray": "a619a67f782cf2f7-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-11-20.php"
    },
    {
-    "t": "2026-11-28T12:24:52.642Z",
-    "ms": 363,
+    "t": "2026-11-28T13:17:01.003Z",
+    "ms": 309,
     "status": 200,
-    "ray": "a6195a2119cb1e0d-IAD",
+    "ray": "a619a6816c2c57bf-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/news/weekly-roundup-2026-11-27.php"
    },
    {
-    "t": "2026-11-28T12:24:53.008Z",
-    "ms": 367,
+    "t": "2026-11-28T13:17:01.316Z",
+    "ms": 285,
     "status": 200,
-    "ray": "a6195a2358692ade-IAD",
+    "ray": "a619a6835bc7cb66-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/sandbox/coast-fire-widget-preview.php"
    },
    {
-    "t": "2026-11-28T12:24:53.378Z",
-    "ms": 379,
+    "t": "2026-11-28T13:17:01.605Z",
+    "ms": 335,
     "status": 200,
-    "ray": "a6195a25bbe2391a-IAD",
+    "ray": "a619a6852b3cc568-SEA",
     "error": null,
     "url": "https://www.ukfinancetools.co.uk/sandbox/results-panel-preview.php"
    }
   ]
  },
  "urls_checked": 71,
- "duration_s": 85.8
+ "duration_s": 79.7
 }
